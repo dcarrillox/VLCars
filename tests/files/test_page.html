@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#f44336" name="theme-color">
+<meta content="Coches de segunda mano y ocasión en Valencia | Autocasion" property="og:title">
+<meta content="11701 coches de segunda mano en Valencia. Entra y encuentra los vehículos de ocasión en Valencia al mejor precio en Autocasion." property="og:description">
+<meta content="https://www.autocasion.com/coches-segunda-mano/valencia" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="11701 coches de segunda mano en Valencia. Entra y encuentra los vehículos de ocasión en Valencia al mejor precio en Autocasion." name="description"/>
+<meta content="app-id=580457760" name="apple-itunes-app"/>
+<meta content="app-id=com.vocento.autocasion" name="google-play-app"/>
+<link href="https://assets0.autocasion.com/ao-assets/img/android-chrome-192x192.png?860079ea43bd9ad462a58998be4e99ec0" rel="apple-touch-icon"/>
+<link href="https://assets0.autocasion.com/ao-assets/img/android-chrome-192x192.png?860079ea43bd9ad462a58998be4e99ec0" rel="android-touch-icon">
+<meta content="https://assets0.autocasion.com/ao-assets/img/red-social.jpg?e0e9435950454b255dc00b37159266a60" property="og:image">
+<meta content="index, follow" name="robots"/>
+<link href="https://www.autocasion.com/coches-segunda-mano/valencia?page=2" rel="next"/>
+<title>Coches de segunda mano y ocasión en Valencia | Autocasion</title>
+<link href="https://www.autocasion.com/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://assets0.autocasion.com/ao-assets/css/listado.bf6837144ae48a9319bb.css" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.autocasion.com/coches-segunda-mano/valencia" rel="canonical"/>
+<link href="https://assets0.autocasion.com/ao-assets/css/print.f7e7d00aa59e785182be.css" media="print" rel="stylesheet" type="text/css"/>
+<!-- Variable Analytic -->
+<script title="googleAnalytics" type="text/javascript">
+        var device = 'desktop';
+        var sku = {"6183508":"ocasion-profesional-valencia","6632160":"ocasion-profesional-valencia","6508848":"ocasion-profesional-valencia","6373812":"ocasion-profesional-valencia","6597760":"ocasion-profesional-valencia","6544154":"km_0-profesional-valencia","6523482":"ocasion-profesional-valencia","6536614":"km_0-profesional-valencia","6430642":"ocasion-profesional-valencia","6584498":"ocasion-profesional-valencia","6585993":"ocasion-profesional-valencia","6584517":"ocasion-profesional-valencia","6544949":"km_0-profesional-valencia","6562481":"ocasion-profesional-valencia","6470485":"ocasion-profesional-valencia","6008965":"ocasion-profesional-valencia"};
+        var category = 'desktop-parrilla';
+        var idAppi = 'UA-431099-1';
+        var activacionListado = 'listado_criteo';
+        var arrayCriteoListado = '6183508,6632160,6508848,6373812,6597760,6544154,6523482,6536614,6430642,6584498,6585993,6584517,6544949,6562481,6470485,6008965';
+
+        function getDataFilter(filters, type, subtype, items){
+            var pagina_ga;
+            var page = 'general/';
+            if (items === 0) {
+                page = 'cero/';
+            }
+
+            var type_ad = filters['ofertas-destacadas'] != undefined && filters['ofertas-destacadas'] ? 'nuevoferta' : getTypeAd(type);
+            var bodywork = filters['Autocasion\\AppBundle\\Entity\\Bodywork'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Bodywork'].slug:'sin_carroceria';
+            var brand = filters['Autocasion\\AppBundle\\Entity\\Brand'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Brand'].slug:'sin_marca';
+
+            if (filters['Autocasion\\AppBundle\\Entity\\CustomFamily'] != undefined) {
+                var family = filters['Autocasion\\AppBundle\\Entity\\CustomFamily'] != undefined?filters['Autocasion\\AppBundle\\Entity\\CustomFamily'].slug:'sin_modelo';
+            } else {
+                var family = filters['Autocasion\\AppBundle\\Entity\\Family'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Family'].slug:'sin_modelo';
+            }
+
+            var fuel = filters['Autocasion\\AppBundle\\Entity\\Fuel'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Fuel'].slug:'sin_combustible';
+            var province =  filters['Autocasion\\AppBundle\\Entity\\Province'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Province'].slug:'sin_provincia';
+            var category =  filters['Autocasion\\AppBundle\\Entity\\Category'] != undefined?filters['Autocasion\\AppBundle\\Entity\\Category']:'sin_categoria';
+            var subcategory = subtype != ""? subtype:'sin_subcategoria';
+            pagina_ga = type_ad + '/' + 'parrilla' + '_' + page;
+            var groupAds = ['ocasion', 'clasicos', 'km_0', 'sin_carnet', 'nuevo', 'nuevoferta'];
+            if(groupAds.indexOf(type_ad) !== -1) {
+                pagina_ga += province + '/' + bodywork + '/' + brand + '/' + family + '/' + fuel;
+            } else if ('AdVan' == type) {
+                pagina_ga += 'furgonetas/furgonetas/' + province + '/' + brand + '/' + fuel;
+            } else if ('industriales' === type_ad) {
+                if (category.level !== 0) {
+                    subcategory = category.slug;
+                    category = category.parent.slug;
+                } else {
+                    category = category.slug;
+                    subcategory = 'sin_subcategoria';
+                }
+                pagina_ga += category + '/' + subcategory + '/' + province + '/' + brand + '/' + fuel;
+            } else if('caravanas' === type_ad) {
+                if(category != 'sin_categoria') {
+                    category = category.slug;
+                }
+                pagina_ga += category + '/' + province + '/' + brand + '/' + family + '/' + fuel;
+            } else if ('accesorios' === type_ad) {
+                pagina_ga += category.slug + '/' + province + '/' + brand + '/' + family;
+            }
+
+            return pagina_ga;
+        }
+        function getTypeAd(type) {
+            if('AdUsedCar' == type){
+                return 'ocasion';
+            }else if('AdNewCar' == type) {
+                return 'nuevo';
+            }else if('classic' == type) {
+                return 'clasicos';
+            }else if('km0' == type) {
+                return 'km_0';
+            }else if('AdNoLicense' == type) {
+                return 'sin_carnet';
+            }else if('AdAccessory' == type) {
+                return 'accesorios';
+            }else if('AdIndustrial' == type) {
+                return 'industriales';
+            }else if('AdMobileHome' == type) {
+                return 'caravanas';
+            } else if('AdVan' == type) {
+                return 'industriales';
+            }
+        }
+
+        var pagina_ga = getDataFilter({"class_name":"AdUsedCar","Autocasion\\AppBundle\\Entity\\Province":{"name":"Valencia","slug":"valencia","id":46}}, "AdUsedCar", null, 11701);
+    </script>
+<script async="" data-vendor="didomi:google" src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" type="didomi/javascript"></script>
+<script>var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];</script>
+<script async="async" type="text/javascript">
+
+                        var tamRoba   = 300;
+
+                    var gptAdSlots = [];
+
+                    (function () {
+                        //luego simplificar
+                        googletag.cmd.push(function () {
+                            // window.googletag.pubads().setRequestNonPersonalizedAds(1);
+                            var _parts = ("; " + document.cookie).split("; LeyCookiesV2=");
+                            var uhc = (_parts === 2 && _parts.pop().split(";").shift() === "1") ? 0 : 1;
+                            // window.googletag.pubads().setRequestNonPersonalizedAds(uhc);
+
+                            var app = Voonto.getInstance();
+                            app.when('consent:advertising').then(function(result) {
+                                // window.googletag.pubads().setRequestNonPersonalizedAds(result ? 0 : 1);
+                            });
+                            // Define a size mapping object. The first parameter to addSize is
+                            // a viewport size, while the second is a list of allowed ad sizes.
+                                var mappingRobapaginas = googletag.sizeMapping().
+    addSize([320, 426], ['fluid', [320, 50], [300, 250], [320, 100]]).
+    addSize([767, 426], [[320, 50], [300, 250], [320, 100]]).
+    addSize([1024, 426], [[300, 250], [300, 600]]). // Horizontal Tablet
+    build();
+
+    var mappingboton_native = googletag.sizeMapping().
+    addSize([0, 0], 'fluid').
+    build();
+
+    var mappingboton_native_dos = googletag.sizeMapping().
+    addSize([0, 0], 'fluid').
+    addSize([320, 426], 'fluid', ).
+    addSize([767, 426], 'fluid', [728, 90]).
+    addSize([1023, 426], 'fluid', ).
+    addSize([1279, 426], 'fluid', [728, 90]).
+    build();
+
+    var mappingboton_native_tres = googletag.sizeMapping().
+    addSize([0, 0], 'fluid').
+    addSize([320, 426], 'fluid', ).
+    addSize([767, 426], 'fluid', [728, 90]).
+    addSize([1023, 426], 'fluid', ).
+    addSize([1279, 426], 'fluid', [728, 90]).
+    build();
+
+    var mappingInteractive = googletag.sizeMapping().
+    addSize([0, 0], []).
+    addSize([320, 426], [[290,52], [290,150]]).
+    addSize([767, 426], [700,124]).
+    addSize([1023, 426], [630,112]).
+    addSize([1279, 426], [850,150]).
+    build();
+
+    var mappingMegabanner = googletag.sizeMapping().
+    addSize([0, 0], [[320, 50], [320, 100]]). //Mobile
+    build();
+
+    gptAdSlots['boton_native'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', 'fluid', 'boton_native').defineSizeMapping(mappingboton_native).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'boton_native');
+gptAdSlots['boton_native_dos'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', ['fluid', [728, 90]], 'boton_native_dos').defineSizeMapping(mappingboton_native_dos).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'boton_native_dos');
+gptAdSlots['boton_native_tres'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', ['fluid', [728, 90]], 'boton_native_tres').defineSizeMapping(mappingboton_native_tres).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'boton_native_tres');
+gptAdSlots['megabannerMobile'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', [[320, 50], [320, 100]], 'megabannerMobile').defineSizeMapping(mappingMegabanner).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'megabannerMobile');
+gptAdSlots['robapaginas'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', ['fluid', [300, 250], [320, 50], [320, 100],[300, 600]], 'robapaginas').defineSizeMapping(mappingRobapaginas).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'robapaginas');
+gptAdSlots['robapaginas_dos'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', ['fluid', [300, 250], [320, 50], [320, 100],[300, 600]], 'robapaginas_dos').defineSizeMapping(mappingRobapaginas).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'robapaginas_dos');
+gptAdSlots['robapaginas_tres'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', ['fluid', [300, 250], [320, 50], [320, 100],[300, 600]], 'robapaginas_tres').defineSizeMapping(mappingRobapaginas).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'robapaginas_tres');
+gptAdSlots['interactivo'] = googletag.defineSlot('/4900/vocento.autocasion/VO/parrilla_VO', [[850, 150],[700, 124],[630, 112],[290, 52], [290, 150]], 'interactivo').defineSizeMapping(mappingInteractive).setCollapseEmptyDiv(true).addService(googletag.pubads().set("page_url", 'https://www.autocasion.com/coches-segunda-mano/valencia')).setTargeting('pos', 'interactivo');
+googletag.pubads().setTargeting('marca', 'sm').setTargeting('ageo', 'valencia'); googletag.pubads().enableSingleRequest(); googletag.pubads().collapseEmptyDivs();
+                            // Start ad fetching
+                            googletag.enableServices();
+                        });
+                    })();
+
+                </script>
+<!-- Pixel de parpadeo -->
+<!--
+            <style>.async-hide { opacity: 0 !important} </style>
+            <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+                    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+                    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+                })(window,document.documentElement,'async-hide','dataLayer',2500,
+                    {'GTM-5XGST7':true});</script>
+            -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                                                              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+                })(window,document,'script','dataLayer','GTM-5XGST7');</script>
+<!-- End Google Tag Manager -->
+<script src="https://assets0.autocasion.com/ao-assets/adBlock.8a869abd0972a0cdbc4b.bundle.js"></script>
+<script type="text/javascript">
+            if (!String.prototype.includes) {
+                String.prototype.includes = function(search, start) {
+                    'use strict';
+                    if (typeof start !== 'number') {
+                        start = 0;
+                    }
+
+                    if (start + search.length > this.length) {
+                        return false;
+                    } else {
+                        return this.indexOf(search, start) !== -1;
+                    }
+                };
+            }
+            if (!Array.prototype.includes) {
+                Object.defineProperty(Array.prototype, 'includes', {
+                    value: function(searchElement, fromIndex) {
+
+                        if (this == null) {
+                            throw new TypeError('"this" es null o no está definido');
+                        }
+
+                        var o = Object(this);
+
+                        var len = o.length >>> 0;
+
+                        if (len === 0) {
+                            return false;
+                        }
+
+                        var n = fromIndex | 0;
+
+                        var k = Math.max(n >= 0 ? n : len - Math.abs(n), 0);
+
+                        function sameValueZero(x, y) {
+                            return x === y || (typeof x === 'number' && typeof y === 'number' && isNaN(x) && isNaN(y));
+                        }
+                        while (k < len) {
+                            if (sameValueZero(o[k], searchElement)) {
+                                return true;
+                            }
+                            k++;
+                        }
+
+                        return false;
+                    }
+                });
+            }
+        </script>
+<script data-cmp="true" data-cmp-position="bottom" data-gdpr-migrate="LeyCookiesV2" data-kangaroo="false" src="//static.vocento.com/voonto2/latest/voonto.js"></script>
+</meta></link></meta></meta></meta></head>
+<body class="" data-ng-app="Autocasion">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5XGST7" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="cartel-footer">
+</div>
+<nav class="navbar" data-offset-top="0">
+<div class="navbar-vue" id="navbar-vue">
+<div class="container menu menu-movil">
+<a :href="urlAdminBack" class="volver-admin" v-cloak="" v-if="urlAdminBack">Volver al Admin</a>
+<a class="happy-meal" href="#"><span class="icon icon-menu"></span></a>
+<a class="logo" href="/"><img alt="Autocasión" src="https://assets0.autocasion.com/ao-assets/img/logo.svg?dd01a764961409f4de4ece8b953d93940"/></a>
+<a class="personal" href="/login" v-cloak="" v-if="!isLogged || !isUser">
+<span class="icon icon-usuario-masa"></span>
+</a>
+<a :class="{ 'usuario-particular': isParticular, 'usuario-profesional': isProfessional }" @click="open()" class="personal" href="#" v-cloak="" v-if="isParticular || isProfessional">
+<span class="icon icon-usuario-masa"></span><span class="icon icon-flecha-abajo"></span>
+</a>
+<div class="favorite" v-cloak="" v-if="isParticular">
+<a href="/particular/area-privada/favoritos"><span class="icon icon-estrella-masa"></span><span class="numero">{[{ currentUser.nFavorites }]}</span></a>
+</div>
+<div class="favorite" v-cloak="" v-if="!isLogged || !isUser">
+<a href="/particular/area-privada/favoritos" v-if="!isLogged || !isUser"><span class="icon icon-estrella-masa"></span></a>
+</div>
+<a class="superusuario" href="/superusuario/anunciantes" title="Selección anunciantes" v-cloak="" v-if="isSuperUser"><span class="icon icon-superusuario"></span></a>
+</div>
+<div class="swipe happy-meal">
+<div class="contenido">
+<div class="desplegar siempre">
+<span>Lo más buscado</span>
+<ul>
+<li><span>Coches</span></li>
+<li><a href="/coches-segunda-mano">Coches de segunda mano</a></li>
+<li><a href="/coches-nuevos">Coches nuevos</a></li>
+</ul>
+</div>
+<div class="desplegar comprar">
+<a href="#">Otras búsquedas <span class="icon icon-flecha-abajo"></span></a>
+<ul>
+<li><span>Coches</span></li>
+<li><a href="/coches-km0">Coches km. 0 y demo </a></li>
+<li><a href="/coches-sin-carnet-segunda-mano">Coches sin carnet de segunda mano</a></li>
+<li><a href="/venta-coches-clasicos">Coches clásicos</a></li>
+<li><span>Más vehículos</span></li>
+<li><a href="/vehiculos-industriales-segunda-mano-furgonetas">Furgonetas de ocasión </a></li>
+<li><a href="/industriales">Vehículos industriales</a></li>
+<li><a href="/otros-segunda-mano-caravanas">Caravanas y remolques</a></li>
+<li><span>Otros</span></li>
+<li><a href="/ofertas-renting-coches">Renting coches</a></li>
+</ul>
+</div>
+<a :class="{ 'vacio': !isLogged || !isUser }" class="pta" href="/vender-coche" v-if="!isLogged || !isUser || (isLogged &amp;&amp; !isProfessional)">Vende tu coche</a>
+<div class="desplegar">
+<a href="#">Actualidad <span class="icon icon-flecha-abajo"></span></a>
+<ul>
+<li><a href="/actualidad">Toda la actualidad</a></li>
+<li><a href="/actualidad/pruebas">Pruebas y novedades</a></li>
+<li><a href="/actualidad/reportajes">Reportajes y consejos</a></li>
+<li><a href="/actualidad/noticias">Noticias del motor</a></li>
+<li><a href="/actualidad/video">Vídeos</a></li>
+<li><a href="/actualidad/microsites">Especiales</a></li>
+<li><a href="https://www.autocasion.com/diccionario">Diccionario del motor</a></li>
+</ul>
+</div>
+<div class="desplegar">
+<a href="#">Servicios<span class="icon icon-flecha-abajo"></span></a>
+<ul>
+<li><a href="/ferias">Ferias</a></li>
+<li><a href="/comparador-coches">Comparar anuncios</a></li>
+<li><a href="/concesionarios">Directorio de concesionarios</a></li>
+<li><a href="/tasacion-de-coches">Tasa tu coche</a></li>
+<!-- <li><a href="/prestamos">Calcula tu préstamo</a></li> -->
+<li><a href="/calcula-tu-seguro">Calcula tu seguro</a></li>
+<li><a href="/transmision-vehiculos">Trámites compra-venta</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div :class="{abierto: opened }" class="personal swipe" v-cloak="" v-if="isParticular">
+<ul class="contenido">
+<li class="profesional">Hola, {[{ currentUser.advertiser.name }]} <span @click="close()" class="icon icon-cerrar"></span></li>
+<li><a :href="$appContext.particularRoutes.ads" rel="nofollow"><span class="icon icon-tus-anuncios"></span>Tus anuncios</a></li>
+<li><a :href="$appContext.particularRoutes.messages" rel="nofollow"><span class="icon icon-sobre-masa"></span>Tus mensajes</a></li>
+<li><a :href="$appContext.particularRoutes.alerts" rel="nofollow"><span class="icon icon-campana-masa"></span>Tus alertas</a></li>
+<li><a :href="$appContext.particularRoutes.favorites" rel="nofollow"><span class="icon icon-estrella-masa"></span>Tus favoritos</a></li>
+<li><a :href="$appContext.particularRoutes.subscriptions" rel="nofollow"><span class="icon icon-notificacion"></span>Notificaciones</a></li>
+<li><a :href="$appContext.particularRoutes.profile" rel="nofollow"><span class="icon icon-datos-contacto"></span>Tus datos</a></li>
+<li><a :href="$appContext.router.baseUrl + '/logout'" class="logout" rel="nofollow"><span class="icon icon-power"></span>Cerrar sesión</a></li>
+</ul>
+</div>
+<div :class="{abierto: opened }" class="personal swipe" v-cloak="" v-else-if="isProfessional">
+<ul class="contenido">
+<li class="profesional">Hola, {[{ currentUser.advertiser.name }]}
+                    <span @click="close" class="icon icon-cerrar"></span>
+</li>
+<li><a href="/profesional/area-privada"><span class="icon icon-candado-masa"></span>Area privada</a></li>
+<li>
+<a href="/" target="_blank">
+<span class="icon icon-salir"></span>
+                        Ir a autocasion.com
+                    </a>
+</li>
+<li>
+<a class="logout" href="/logout" rel="nofollow">
+<span class="icon icon-power"></span>
+                        Cerrar sesión
+                    </a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container contenedor-sidebar">
+<ul class="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a href="/" itemprop="item"><span itemprop="name">Autocasión</span> </a><meta content="1" itemprop="position"/></li>
+<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a class="ultimo" href="/coches-segunda-mano" itemprop="item"><span itemprop="name">Coches de segunda mano</span></a><meta content="2" itemprop="position"/></li>
+</ul>
+<div class="listadoh1"><span>11.701</span> <h1>Coches de segunda mano y ocasión en Valencia </h1></div>
+</div>
+<input id="show-ekomi" readonly="" type="hidden" value=""/>
+<div class="searchCtrl-movil" data-ng-controller="SearchCtrl" data-ng-init='showHits = true; subfamiliesAggs = null; init({"class_name":"AdUsedCar","province":{"name":"Valencia","slug":"valencia","id":46}}, false, false);'>
+<div class="layer sticky" data-offset-top="150">
+<nav>
+<div class="filtros">
+<form>
+<div class="container" id="carrousel">
+<div class="filtros-item" id="filtros-item">
+<div class="form-group" id="filter1">
+<div class="selectFiltro seleccionado">
+<p data-ng-click="getAggregationSelect('provincesAggs', 'province', false, true)">
+<span>Valencia</span>
+<span class="icon icon-aspa aspa" data-ng-click="removeFilter('province'); getUrl()"></span>
+</p>
+<ul data-add-filter-callback="addFilter(p1, p2, agg)" data-agg-name="provincesAggs" data-aggs="data.aggs.provincesAggs" data-filter-name="province" data-filter-navigate="filterNavigateAggDropdown" data-loading="selectedFilters['province'].loading" data-ng-agg-dropdown="" data-ng-select-agg-nav="" data-remove-filter-callback="removeFilter('province'); getUrl();" data-title="Provincia" data-with-search="true"></ul>
+</div>
+</div>
+<div class="form-group" id="filter2">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('brandsAggs', 'brand', false, true);">
+<span>Marca</span>
+</p>
+<ul data-add-filter-callback="addFilter(p1, p2, agg)" data-agg-name="brandsAggs" data-aggs="data.aggs.brandsAggs" data-filter-name="brand" data-loading="selectedFilters['brand'].loading" data-ng-agg-dropdown="" data-ng-select-agg-nav="" data-remove-filter-callback="removeFilter('brand'); getUrl();" data-title="Marca" data-with-search="true">
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter3">
+<div class="selectFiltro" ng-keyup="event=$event">
+<p>
+<span>Versión</span>
+</p>
+<ul class="version">
+<li>
+<input autocomplete="off" id="free-version-search" maxlength="50" name="freeSearch" ng-keyup="version($event)" placeholder=" Buscar por versión" type="text">
+<span class="icon icon-aspa aspa" ng-click="cleanVersion()" ng-hide="hideCleanVersion()"></span>
+</input></li>
+</ul>
+</div>
+</div>
+<input id="free-version-search-hidden" type="hidden" value=""/>
+<input id="remove-version-empty" type="hidden" value="/coches-segunda-mano/valencia"/>
+<input id="index-value" type="hidden" value="4"/>
+<div class="form-group" data-ng-click="" id="filter4">
+<div class="selectFiltro grande" data-filter-type="range">
+<p>
+<span>Precio</span>
+</p>
+<ul class="priceFilterParent" data-ng-init="  ">
+<li>
+<div class="campo">
+<p ng-select-range-nav="ul.priceFilterInit">[[ showSpecialFilter('precio', 'desde') ]]
+                        <span data-ng-show="existsSpecialFilter('precio', 'desde')"> €</span>
+</p>
+<ul class="priceFilterInit">
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.precio['desde'] = null; getAggregationSpecialFilters('precio');">
+<a href="#">Desde</a>
+</li>
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.precio['desde']=i; getAggregationSpecialFilters('precio');" data-ng-repeat="i in getPriceMinRange() track by $index">
+<a href="#">[[i | number]] €</a>
+</li>
+</ul>
+<div class="input-otro">
+<input data-ng-model="temp['precio-desde']" id="desde" min="0" name="desde" ng-keyup="$event.keyCode == 13 ? updateInputOther($event, 'precio', 'desde', temp['precio-desde']) : null" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" placeholder="Otro" type="number"/>
+<a class="btn btn-blue-empty" data-ng-click="setTempFilter('precio','desde', temp['precio-desde']); getAggregationSpecialFilters('precio');" href="#">Ok</a>
+</div>
+</div>
+<div class="campo">
+<p ng-select-range-nav="ul.priceFilterEnd">[[ showSpecialFilter('precio', 'hasta') ]]<span data-ng-show="existsSpecialFilter('precio', 'hasta')"> €</span></p>
+<ul class="priceFilterEnd">
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.precio['hasta'] = null; getAggregationSpecialFilters('precio');">
+<a href="#">Hasta</a>
+</li>
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.precio['hasta']=i; getAggregationSpecialFilters('precio');" data-ng-repeat="i in getPriceMaxRange() track by $index">
+<a href="#">[[i | number]] €</a>
+</li>
+</ul>
+<div class="input-otro">
+<input data-ng-model="temp['precio-hasta']" id="desde" min="0" name="desde" ng-keyup="$event.keyCode == 13 ? updateInputOther($event, 'precio', 'hasta', temp['precio-hasta']) : null" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" placeholder="Otro" type="number"/>
+<a class="btn btn-blue-empty" data-ng-click="setTempFilter('precio','hasta', temp['precio-hasta']); getAggregationSpecialFilters('precio');" href="#">Ok</a>
+</div>
+</div>
+<div class="aplicar"><button class="btn btn-blue-empty" data-ng-class="{disabled: data.total &lt; 1}" data-ng-click="applySpecialFilters('precio', true);" data-ng-disabled="data.total &lt; 1" href="#">Aplicar [[(data.total&gt;0)?'('+(data.total|number)+')':'']]</button></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter5">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('fuelsAggs', 'fuel', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Combustible</span>
+</p>
+<ul data-ng-init="data.filtros['fuel'] = (!data.filtros.hasOwnProperty('fuel'))? null : data.filtros['fuel']">
+<li>
+<div class="loading" data-ng-show="selectedFilters['fuel'].loading">
+                        Cargando...
+                    </div>
+<div class="radio" data-ng-show="!selectedFilters['fuel'].loading" data-position="0">
+<label data-ng-click="goToUrlWithFilter('fuel', null);">
+<input ng-checked="data.filtros.fuel==null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, fuel) in data.aggs.fuelsAggs" data-ng-show="!selectedFilters['fuel'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="goToUrlWithFilter('fuel', fuel.value);">
+<input name="combustible" ng-model="data.filtros.fuel" ng-value="fuel.value" type="radio"/>
+<span class="icon"></span> [[ fuel.label ]]
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter6">
+<div class="selectFiltro grande" data-filter-type="range">
+<p>
+<span>Kilómetros</span>
+</p>
+<ul class="kmFilterParent" data-ng-init="  ">
+<li>
+<div class="campo">
+<p ng-select-range-nav="ul.kmFilterInit">[[ showSpecialFilter('km', 'desde') ]]
+                            <span data-ng-show="existsSpecialFilter('km', 'desde')"> km</span>
+</p>
+<ul class="kmFilterInit">
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.km['desde'] = null; getAggregationSpecialFilters('km');">
+<a href="#">Desde</a>
+</li>
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.km['desde']=i; getAggregationSpecialFilters('km');" data-ng-repeat="i in getKmMinRange() track by $index">
+<a href="#">[[i | number]] km</a>
+</li>
+</ul>
+<div class="input-otro">
+<input data-ng-model="temp['km-desde']" id="desde" min="0" name="desde" ng-keyup="$event.keyCode == 13 ? updateInputOther($event, 'km', 'desde', temp['km-desde']) : null" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" placeholder="Otro" type="number"/>
+<a class="btn btn-blue-empty" data-ng-click="setTempFilter('km','desde', temp['km-desde']); getAggregationSpecialFilters('km');" href="#">Ok</a>
+</div>
+</div>
+<div class="campo">
+<p ng-select-range-nav="ul.kmFilterEnd">[[ showSpecialFilter('km', 'hasta') ]]<span data-ng-show="existsSpecialFilter('km', 'hasta')"> km</span></p>
+<ul class="kmFilterEnd">
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.km['hasta'] = null; getAggregationSpecialFilters('km');">
+<a href="#">Hasta</a>
+</li>
+<li class="selectable-filter-item" data-ng-click="data.filtrosAplicar.km['hasta']=i; getAggregationSpecialFilters('km');" data-ng-repeat="i in getKmMaxRange() track by $index">
+<a href="#">[[i | number]] km</a>
+</li>
+</ul>
+<div class="input-otro">
+<input data-ng-model="temp['km-hasta']" id="desde" min="0" name="desde" ng-keyup="$event.keyCode == 13 ? updateInputOther($event, 'km', 'hasta', temp['km-hasta']) : null" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" placeholder="Otro" type="number"/>
+<a class="btn btn-blue-empty" data-ng-click="setTempFilter('km','hasta', temp['km-hasta']); getAggregationSpecialFilters('km');" href="#">Ok</a>
+</div>
+</div>
+<div class="aplicar"><button class="btn btn-blue-empty" data-ng-class="{disabled: data.total &lt; 1}" data-ng-click="applySpecialFilters('km', true);" data-ng-disabled="data.total &lt; 1">Aplicar [[(data.total&gt;0)?'('+(data.total | number)+')':'']]</button></div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter7">
+<div class="selectFiltro">
+<p>
+<span>Año</span>
+</p>
+<ul data-ng-init="
+            data.filtros['fecha-desde'] =  getMinYear() ;data.filtrosAplicar.fecha.desde = data.filtros['fecha-desde'];
+            data.filtros['fecha-hasta'] =  getMaxYear(); data.filtrosAplicar.fecha.hasta = data.filtros['fecha-hasta'];">
+<li class="asociado">
+<div attach-handle-values="true" max="getMaxYear()" min="getMinYear()" model-max="data.filtrosAplicar.fecha.hasta" model-min="data.filtrosAplicar.fecha.desde" on-handle-up="updateFilter = true; addSpecialFilter('fecha-desde', data.filtrosAplicar.fecha.desde, 'fecha', 'fecha');" range-slider="" show-values="true" step="1"></div>
+<div class="aplicar">
+<a class="noClose" data-ng-click="data.filtrosAplicar.fecha.desde = getMinYear(); data.filtrosAplicar.fecha.hasta = getMaxYear();getAggregationSpecialFilters('fecha');">Borrar</a>
+<button class="btn btn-blue-empty" data-ng-class="{disabled: data.total &lt; 1}" data-ng-click="applySpecialFilters('fecha', true);" data-ng-disabled="data.total &lt; 1">Aplicar [[(data.total&gt;0)?'('+(data.total|number)+')':'']]</button>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter8">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('bodyworkAggs', 'bodywork', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Carrocería</span>
+</p>
+<ul data-ng-init="data.filtros.bodywork = (!data.filtros.hasOwnProperty('bodywork'))? null:data.filtros.bodywork;">
+<li>
+<div class="loading" data-ng-show="selectedFilters['bodywork'].loading">Cargando...</div>
+<div class="radio" data-ng-click="removeFilter('bodywork'); getUrl();" data-ng-show="!selectedFilters['bodywork'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros.bodywork == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, bodywork) in data.aggs.bodyworkAggs" data-ng-show="!selectedFilters['bodywork'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="goToUrlWithFilter('bodywork', bodywork.value);">
+<input name="carroceria" ng-model="data.filtros.bodywork" ng-value="bodywork.value" type="radio"/>
+<span class="icon"></span> [[ bodywork.label ]]
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter9">
+<div class="selectFiltro">
+<p>
+<span>Potencia</span>
+</p>
+<ul data-ng-init="
+            data.filtros['potencia-desde'] =  getMinHP() ; data.filtrosAplicar.potencia.desde = data.filtros['potencia-desde'];
+            data.filtros['potencia-hasta'] =  getMaxHP(); data.filtrosAplicar.potencia.hasta = data.filtros['potencia-hasta'];">
+<li class="asociado">
+<div class="form-group">
+<label for="potencia_desde">Desde</label>
+<input data-ng-blur="updateRangeInput('potencia', 'desde');getAggregationSpecialFilters('potencia');" data-ng-init="temp['potencia-hasta'] = data.filtros['potencia-hasta']; temp['potencia-desde'] = data.filtros['potencia-desde'];" data-ng-model="temp['potencia-desde']" id="potencia_desde" min="0" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" type="number"/>
+</div>
+<div class="form-group">
+<label for="potencia_hasta">Hasta</label>
+<input data-ng-blur="updateRangeInput('potencia', 'hasta');getAggregationSpecialFilters('potencia');" data-ng-model="temp['potencia-hasta']" id="potencia_hasta" min="0" onkeypress="return event.charCode &gt;= 48 &amp;&amp; event.charCode &lt;= 57" type="number"/>
+</div>
+<div attach-handle-values="true" filter="cv" max="getMaxHP()" min="getMinHP()" model-max="data.filtrosAplicar.potencia.hasta" model-min="data.filtrosAplicar.potencia.desde" on-handle-up="updateFilter = true; temp['potencia-desde'] = data.filtrosAplicar.potencia.desde; temp['potencia-hasta'] = data.filtrosAplicar.potencia.hasta;
+                         addSpecialFilter('potencia-desde', data.filtros.potencia.desde, 'potencia', 'potencia');" range-slider="" show-values="true" step="getStepHP()"></div>
+<div class="aplicar">
+<a class="noClose" data-ng-click="data.filtrosAplicar.potencia.desde = getMinHP(); data.filtrosAplicar.potencia.hasta = getMaxHP();temp['potencia-desde'] = getMinHP(); temp['potencia-hasta'] = getMaxHP(); getAggregationSpecialFilters('potencia');">Borrar</a>
+<button class="btn btn-blue-empty" data-ng-class="{disabled: data.total &lt; 1}" data-ng-click="applySpecialFilters('potencia', true);" data-ng-disabled="data.total &lt; 1">Aplicar [[(data.total&gt;0)?'('+(data.total|number)+')':'']]</button>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter10">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('transmissionsAggs', 'transmission', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Cambio</span>
+</p>
+<ul data-ng-init="data.filtros.transmission = (!data.filtros.hasOwnProperty('transmission'))?null:data.filtros.transmission;">
+<li>
+<div class="loading" data-ng-show="selectedFilters['transmission'].loading">
+                        Cargando...
+                    </div>
+<div class="radio" data-ng-click="removeFilter('transmission'); getUrl();" data-ng-show="!selectedFilters['transmission'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros.transmission == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-click="goToUrlWithFilter('transmission', transmission.value);" data-ng-repeat="(key, transmission) in data.aggs.transmissionsAggs" data-ng-show="!selectedFilters['transmission'].loading" data-position="[[key + 1 ]]">
+<label>
+<input name="transmission" ng-model="data.filtros.transmission" ng-value="transmission.value" type="radio"/>
+<span class="icon"></span> [[ transmission.label ]]
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter11">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('doorssAggs', 'doors', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Puertas</span>
+</p>
+<ul data-ng-init="data.filtros.doors = (!data.filtros.hasOwnProperty('doors'))? null : data.filtros.doors;">
+<li>
+<div class="loading" data-ng-show="selectedFilters['doors'].loading">Cargando... </div>
+<div class="radio" data-ng-click="data.filtros.doors = null; updateFilter = true; getUrl();" data-ng-show="!selectedFilters['doors'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros.doors == null" type="radio"/>
+<span class="icon"></span> Indiferente
+                        </label>
+</div>
+<div class="radio" data-ng-click="goToUrlWithFilter('doors', doors.value);" data-ng-repeat="(key, doors) in data.aggs.doorssAggs" data-ng-show="!selectedFilters['doors'].loading" data-position="[[key + 1 ]]">
+<label>
+<input name="puertas" ng-model="data.filtros.doors" ng-value="doors.value" type="radio"/>
+<span class="icon"></span> [[ doors.label ]]
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter12">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('seatsAggs', 'seats', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Plazas</span>
+</p>
+<ul data-ng-init="data.filtros.seats = (!data.filtros.hasOwnProperty('seats'))? null : data.filtros.seats;">
+<li>
+<div class="loading" data-ng-show="selectedFilters['seats'].loading">Cargando... </div>
+<div class="radio" data-ng-click="data.filtros.seats = null; updateFilter = true; getUrl();" data-ng-show="!selectedFilters['seats'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros.seats == null" type="radio"/>
+<span class="icon"></span> Indiferente
+                        </label>
+</div>
+<div class="radio" data-ng-click="goToUrlWithFilter('seats', seats.value);" data-ng-repeat="(key, seats) in data.aggs.seats" data-ng-show="!selectedFilters['seats'].loading" data-position="[[key + 1 ]]">
+<label>
+<input name="plazas" ng-model="data.filtros.seats" ng-value="seats.value" type="radio"/>
+<span class="icon"></span> [[ seats.label ]] <span ng-if="seats.label == 1">Plaza</span><span ng-if="seats.label != 1">Plazas</span>
+</label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter13">
+<div class="selectFiltro grande">
+<p data-ng-click="getAggregationSelect('colorAggs', 'color', false, true); null !== data.filtros.color ? data.filtrosAplicar.color = data.filtros.color : data.filtrosAplicar.color = null; (data.filtros.hasOwnProperty('metalizado') &amp;&amp; false != data.filtros.metalizado) ? data.filtrosAplicar.metalizado = data.filtros.metalizado : data.filtrosAplicar.metalizado = false;" data-ng-select-radio-nav="selectFiltro">
+<span>Color</span>
+</p>
+<ul>
+<li class="color">
+<div class="loading" data-ng-init="data.filtros.color = (!data.filtros.hasOwnProperty('color'))? null : data.filtros.color;" data-ng-show="selectedFilters['color'].loading">Cargando... </div>
+<div class="radio" data-ng-click="data.filtrosAplicar.color = null; getUrl();" data-ng-show="!selectedFilters['color'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtrosAplicar.color == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, color) in data.aggs.colorAggs" data-ng-show="!selectedFilters['color'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="data.filtrosAplicar.color = color.value">
+<input name="color" ng-model="data.filtrosAplicar.color" ng-value="color.value" type="radio"/>
+<span class="icon"></span> [[ color.label ]]
+                        </label>
+</div>
+<div class="checkbox" data-ng-show="(data.filtrosAplicar.hasOwnProperty('metalizado') &amp;&amp; data.filtrosAplicar.metalizado != false) || null != data.filtrosAplicar.color">
+<label for="metalizado">
+<input data-ng-false-value="false" data-ng-model="data.filtrosAplicar.metalizado" data-ng-true-value="true" id="metalizado" name="metalizado" type="checkbox" value="true"/>
+<span class="icon"></span>Metalizado
+                            </label>
+</div>
+<div class="aplicar">
+<a class="btn btn-blue-empty" data-ng-click="applyNormalFilters(['color', 'metalizado'])">Aplicar</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter14">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('guaranteedAggs', 'con-garantia', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Garantizado</span>
+</p>
+<ul>
+<li>
+<div class="loading" data-ng-init="data.filtros['con-garantia'] = (!data.filtros.hasOwnProperty('con-garantia'))? null : data.filtros['con-garantia'];" data-ng-show="selectedFilters['con-garantia'].loading">
+                        Cargando...
+                    </div>
+<div class="radio" data-ng-click="goToUrlWithFilter('con-garantia', null);" data-ng-show="!selectedFilters['con-garantia'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros['con-garantia'] == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, guranteedOption) in data.aggs.guaranteedAggs" data-ng-show="!selectedFilters['con-garantia'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="goToUrlWithFilter('con-garantia', guranteedOption.value)" data-ng-show="guranteedOption.value == 1">
+<input name="guranteedOption" ng-model="data.filtros['con-garantia']" ng-value="guranteedOption.value" type="radio"/>
+<span class="icon"></span> Garantizado
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter15">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('rolesAggs', 'role', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Tipo de vendedor</span>
+</p>
+<ul>
+<li>
+<div class="loading" data-ng-init="data.filtros.role = (!data.filtros.hasOwnProperty('role'))? null : data.filtros.role;" data-ng-show="selectedFilters['role'].loading">
+                        Cargando...
+                    </div>
+<div class="radio" data-ng-click="goToUrlWithFilter('role', null);" data-ng-show="!selectedFilters['role'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros.role == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, role) in data.aggs.rolesAggs" data-ng-show="!selectedFilters['role'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="goToUrlWithFilter('role', role.value)">
+<input name="role" ng-model="data.filtros.role" ng-value="role.value" type="radio"/>
+<span class="icon"></span> [[ role.label ]]
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter16">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('certificateAggs', 'certificado', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Certificado</span>
+</p>
+<ul>
+<li>
+<div class="loading" data-ng-init="data.filtros['certificado'] = (!data.filtros.hasOwnProperty('certificado'))? null : data.filtros['certificado'];" data-ng-show="selectedFilters['certificado'].loading">Cargando...</div>
+<div class="radio" data-ng-click="goToUrlWithFilter('certificado', null);" data-ng-show="!selectedFilters['certificado'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros['certificado'] == null" type="radio"/>
+<span class="icon"></span> Todos
+                        </label>
+</div>
+<div class="radio" data-ng-repeat="(key, certificatedOption) in data.aggs.certificateAggs" data-ng-show="!selectedFilters['certificado'].loading" data-position="[[key + 1 ]]">
+<label data-ng-click="goToUrlWithFilter('certificado', certificatedOption.value)" data-ng-show="certificatedOption.value == 1">
+<input name="certificatedOption" ng-model="data.filtros['certificado']" ng-value="certificatedOption.value" type="radio"/>
+<span class="icon"></span> Certificado
+                        </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="form-group" id="filter17">
+<div class="selectFiltro">
+<p data-ng-click="getAggregationSelect('hallmarkAggs', 'hallmark', false, true)" data-ng-select-radio-nav="selectFiltro">
+<span>Distintivo ambiental</span>
+</p>
+<ul>
+<li>
+<div class="loading" data-ng-init="data.filtros['hallmark'] = (!data.filtros.hasOwnProperty('hallmark'))? null : data.filtros['hallmark'];" data-ng-show="selectedFilters['hallmark'].loading">Cargando...
+                </div>
+<div class="radio" data-ng-click="goToUrlWithFilter('hallmark', null);" data-ng-show="!selectedFilters['hallmark'].loading" data-position="0">
+<label>
+<input ng-checked="data.filtros['hallmark'] == null" type="radio"/>
+<span class="icon"></span> Indiferente
+                    </label>
+</div>
+<div class="radio" data-ng-click="goToUrlWithFilter('hallmark', hallmark.value);" data-ng-repeat="(key, hallmark) in data.aggs.hallmarkAggs" data-ng-show="!selectedFilters['hallmark'].loading" data-position="[[key + 1 ]]">
+<label>
+<input name="distintivo" ng-model="data.filtros.distintivo" ng-value="hallmark.value" type="radio"/>
+<span class="icon"></span> [[ hallmark.label ]]
+                    </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<button class="prev" data-ng-click="movement(-1)" data-ng-cloak="" ng-disabled="carrusel.currentPage == 0"><span class="icon icon-flecha-izda-2"></span></button>
+<button class="next" data-ng-click="movement(1)" data-ng-cloak="" ng-disabled="nextTo == false"><span class="icon icon-flecha-dcha-2"></span></button>
+</div>
+</form>
+</div>
+<div class="opciones-listado">
+<div class="container">
+<div class="col-izq">
+<a class="eliminar hidden-xs" data-ng-click="resetAllFilters(true);" data-ng-cloak="" data-ng-show="getNumberSelectedFilters()&gt;0">
+<span class="icon icon-papelera-masa"></span> Eliminar filtros
+                            </a>
+<div class="ordenar">
+<span>Ordenar por:</span>
+<div class="selectFiltro">
+<p>Relevancia</p>
+<ul>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=asc&amp;rel=nofollow&amp;page=1" title="Relevancia">
+    Relevancia
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=desc&amp;rel=nofollow&amp;sort=updated_at&amp;page=1" title="Publicación: Más recientes">
+    Publicación: Más recientes
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=asc&amp;rel=nofollow&amp;sort=updated_at&amp;page=1" title="Publicación: Más antiguos">
+    Publicación: Más antiguos
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=asc&amp;rel=nofollow&amp;sort=price&amp;page=1" title="Precio: Baratos primero">
+    Precio: Baratos primero
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=desc&amp;rel=nofollow&amp;sort=price&amp;page=1" title="Precio: Caros primero">
+    Precio: Caros primero
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=asc&amp;rel=nofollow&amp;sort=kilometers&amp;page=1" title="Km: Menos kilómetros">
+    Km: Menos kilómetros
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=desc&amp;rel=nofollow&amp;sort=kilometers&amp;page=1" title="Km: Más kilómetros">
+    Km: Más kilómetros
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=desc&amp;rel=nofollow&amp;sort=year&amp;page=1" title="Matrícula: Más nuevos">
+    Matrícula: Más nuevos
+    </a>
+</li>
+<li>
+<a class="sortable" href="/coches-segunda-mano/valencia?direction=asc&amp;rel=nofollow&amp;sort=year&amp;page=1" title="Matrícula: Más antiguos">
+    Matrícula: Más antiguos
+    </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<div id="listComparator">
+</div>
+<div class="container-fluid listado"> <div class="container contenedor-sidebar">
+<section class="col-izq">
+<div class="recomendado">
+<a href="/profesional/ofertas-renting-1759125?sponsor_id=15303" target="_blank">
+<img alt="OFERTAS RENTING desde 297€/mes" class="type-image" lazyload="" name="OFERTAS RENTING desde 297€/mes" src="//images0.autocasion.com/unsafe/origxorig/adv/01/3028/43a8c7968b784dbd6b08c50eb63ad107ae0dd672.png" title="OFERTAS RENTING desde 297€/mes"/>
+<p>
+            	Vendedor recomendado:
+            	<span>OFERTAS RENTING desde 297€/mes</span>
+</p>
+<span class="hidden-xs">Descubre sus coches</span>
+</a>
+</div>
+<div class="contenido-listado" data-ng-controller="TextLinksCtrl" id="results-html">
+<!-- item.1 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/mercedes-benz-clase-cla-ocasion/cla-200-cdi-shooting-brake-urban-161ad662ed98cf-ref6183508">
+<div class="img-anuncio">
+<img alt="MERCEDES-BENZ Clase CLA 200 CDI   Shooting Brake Urban" class="type-image" itemprop="image" lazyload="" src="//images0.autocasion.com/unsafe/260x146/ad/1221/06/6183508/e72ab639310015a5f4b5e3dbfbd1c25d.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>14</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  MERCEDES-BENZ Clase CLA 200 CDI   Shooting Brake Urban  </h2>
+<p class="precio financiacion">
+<span class="price">21.500 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2017</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>89.438 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>136 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">TALLERES QUART (Renault)</p>
+<p><span>0,0</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="0" title="Puntuación promedio: 0">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/mercedes-benz-clase-cla-ocasion/cla-200-cdi-shooting-brake-urban-161ad662ed98cf-ref6183508" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<a class="ng-non-bindable textlink-publi" data-hash="2c729e72aabf710ae5025b0e012c242c" href="https://pubads.g.doubleclick.net/gampad/clk?id=215487363&amp;iu=/4900/vocento.autocasion/text-link&amp;16481430771" rel="nofollow" target="_blank">Calcula tu seguro</a>
+<ng-contact-modal class="" data-ad="6183508" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6183508" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6183508" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6183508)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.2 -->
+<article class="anuncio" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/bmw-serie-4-ocasion/m4a-competition-ref6632160">
+<div class="img-anuncio">
+<img alt="BMW Serie 4 M4A Competition" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/04/1997/38c5a333085fb21c59288d03d47768090e644a7f.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>69</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  BMW Serie 4 M4A Competition  </h2>
+<p class="precio financiacion">
+<span class="price">57.500 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2017</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>47.600 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+</ul>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/bmw-serie-4-ocasion/m4a-competition-ref6632160" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6632160" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6632160" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6632160" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6632160)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<p class="text-publi">Publicidad</p>
+<div class="ng-non-bindable mega-publi" id="boton_native">
+<script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("boton_native"); });
+    </script>
+</div>
+<!-- item.4 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/bmw-serie-4-ocasion/420da-gran-coupe-xdrive-2-ref6508848">
+<div class="img-anuncio">
+<img alt="BMW Serie 4 420dA Gran Coupé xDrive" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/08/1511/9325979b558f03afc01901fcc24f6a65b78cb9c7.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>31</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  BMW Serie 4 420dA Gran Coupé xDrive  </h2>
+<p class="precio financiacion">
+<span class="price">22.300 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2017</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>86.500 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>190 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">ORLANDO CARS</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/bmw-serie-4-ocasion/420da-gran-coupe-xdrive-2-ref6508848" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6508848" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6508848" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6508848" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6508848)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<div class="megabanner-interactivo" data-ng-cloak="">
+<div class="cabecera">
+<p><span>Lo más destacado:</span> <a href="/profesional/ofertas-renting-1759125?interactive_banner_id=7068">
+                    OFERTAS RENTING desde 297€/mes - Las mejores ofertas de renting las podéIs encontrar en Renting Coches. Todo incluIdo, sin cuota de entrada y con ENTREGA RÁPIDA. </a></p>
+<a href="/profesional/ofertas-renting-1759125?interactive_banner_id=7068">
+<img alt="OFERTAS RENTING desde 297€/mes" class="type-image" lazyload="" name="OFERTAS RENTING desde 297€/mes" src="//images0.autocasion.com/unsafe/origxorig/adv/01/3028/43a8c7968b784dbd6b08c50eb63ad107ae0dd672.png" title="OFERTAS RENTING desde 297€/mes"/>
+</a>
+</div>
+</div>
+<!-- item.7 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/honda-cr-z-ocasion/cr-z-1-5i-vtec-ima-sport-ref6373812">
+<div class="img-anuncio">
+<img alt="HONDA CR-Z 1.5i-VTEC IMA Sport" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/10/1210/2783716d4e17871f68f34796b413e864d34c0a4e.jpeg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>27</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  HONDA CR-Z 1.5i-VTEC IMA Sport  </h2>
+<p class="precio financiacion">
+<span class="price">9.900 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2012</span></li>
+<li>Combustible: <span> Híbrido</span></li>
+<li>Kilómetros: <span>109.600 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>124 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">ORLANDO CARS</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/honda-cr-z-ocasion/cr-z-1-5i-vtec-ima-sport-ref6373812" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6373812" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6373812" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6373812" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6373812)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.8 -->
+<article class="anuncio" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/mercedes-benz-clase-cla-ocasion/cla-200d-2-ref6597760">
+<div class="img-anuncio">
+<img alt="MERCEDES-BENZ Clase CLA 200d" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/10/1370/499dc23f8f1c4607562849086c97e07c399df2b1.jpg" title=""/>
+<p class="certificado">Certificado por MERCEDES-BENZ</p>
+<p class="fotos"><span class="icon icon-camara"></span>15</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  MERCEDES-BENZ Clase CLA 200d  </h2>
+<p class="precio">
+<span class="icon icon-flecha-corta-abajo">2%</span> <span class="tachado">40.800 €</span> <span class="price">39.800 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2019</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>24.800 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>150 cv</span></li>
+</ul>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6597760" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6597760" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6597760" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6597760)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.9 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-81kw-ref6544154">
+<div class="img-anuncio">
+<img alt="VOLKSWAGEN Taigo 1.0 TSI Life 81kW" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/05/1858/64fad36c3762893ff7a06e167c1e51d7308e1c5b.png" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>12</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  VOLKSWAGEN Taigo 1.0 TSI Life 81kW  </h2>
+<p class="precio financiacion">
+<span class="price">19.802 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2022</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>1 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>110 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">COMERCIAL JOSE VICENTE</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-81kw-ref6544154" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6544154" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6544154" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6544154" data-classname="AdUsedCar" data-km0="1" data-ng-class="comparatorStatus(6544154)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<p class="text-publi">Publicidad</p>
+<div class="ng-non-bindable mega-publi" id="boton_native_dos">
+<script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("boton_native_dos"); });
+    </script>
+</div>
+<!-- item.11 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/ford-c-max-ocasion/c-max-1-6-ti-vct-trend-115-ref6523482">
+<div class="img-anuncio">
+<img alt="FORD C-Max 1.6 Ti-VCT Trend 115" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/07/1719/e7e39c74f98aa8074378bfc2e9ce7a1c1a8fc0bc.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>17</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  FORD C-Max 1.6 Ti-VCT Trend 115  </h2>
+<p class="precio">
+<span class="price">5.900 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2008</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>169.000 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>115 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">MA AUTOMOCION</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6523482" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6523482" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6523482" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6523482)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.12 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-km0/km-0/volkswagen-tiguan-km0/tiguan-2-0tdi-r-line-dsg-110kw-ref6536614">
+<div class="img-anuncio">
+<img alt="VOLKSWAGEN Tiguan 2.0TDI R-Line DSG 110kW" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/02/2206/5f458da02426c38e0114f365f19e048921159855.png" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>12</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  VOLKSWAGEN Tiguan 2.0TDI R-Line DSG 110kW  </h2>
+<p class="precio financiacion">
+<span class="price">38.021 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2022</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>1 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>150 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">COMERCIAL JOSE VICENTE</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-km0/km-0/volkswagen-tiguan-km0/tiguan-2-0tdi-r-line-dsg-110kw-ref6536614" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6536614" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6536614" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6536614" data-classname="AdUsedCar" data-km0="1" data-ng-class="comparatorStatus(6536614)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.13 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/ssangyong-rexton-ocasion/rx-290-1620391d9094f0-ref6430642">
+<div class="img-anuncio">
+<img alt="SSANGYONG Rexton 2.9 TD GLX" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/0222/11/6430642/e423e2141eeaf9f57201df7ee3addbb7.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>12</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  SSANGYONG Rexton 2.9 TD GLX  </h2>
+<p class="precio">
+<span class="price">5.900 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2003</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>144.001 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>120 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">TALLERES QUART (Renault)</p>
+<p><span>0,0</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="0" title="Puntuación promedio: 0">
+</div>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6430642" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6430642" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6430642" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6430642)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.14 -->
+<article class="anuncio" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/mercedes-benz-clase-glc-ocasion/glc-250d-4matic-ref6584498">
+<div class="img-anuncio">
+<img alt="MERCEDES-BENZ Clase GLC 250d 4Matic Aut." class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/12/1162/e0eff757181293306bc026e22b6a2de96772f38d.jpg" title=""/>
+<p class="certificado">Certificado por MERCEDES-BENZ</p>
+<p class="fotos"><span class="icon icon-camara"></span>15</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  MERCEDES-BENZ Clase GLC 250d 4Matic Aut.  </h2>
+<p class="precio">
+<span class="price">37.900 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2016</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>123.000 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>204 cv</span></li>
+</ul>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6584498" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6584498" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6584498" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6584498)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.15 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/peugeot-2008-ocasion/2008-1-5-bluehdi-s-s-style-100-ref6585993">
+<div class="img-anuncio">
+<img alt="PEUGEOT 2008 1.5 BlueHDI S&amp;S Style 100" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/09/1463/25d80fe37c16df5fe6f94d1b1fd752e701e88875.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>31</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  PEUGEOT 2008 1.5 BlueHDI S&amp;S Style 100  </h2>
+<p class="precio financiacion">
+<span class="price">15.400 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2018</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>66.000 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>100 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">ORLANDO CARS</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/peugeot-2008-ocasion/2008-1-5-bluehdi-s-s-style-100-ref6585993" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6585993" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6585993" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6585993" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6585993)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.16 -->
+<article class="anuncio" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/seat-alhambra-ocasion/alhambra-2-0tdi-cr-s-s-style-adv-dsg-150-ref6584517">
+<div class="img-anuncio">
+<img alt="SEAT Alhambra 2.0TDI CR S&amp;S Style Adv. DSG 150" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/07/1672/284bd7bf4d16adca347db2112cda13d7d6ae7399.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>15</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  SEAT Alhambra 2.0TDI CR S&amp;S Style Adv. DSG 150  </h2>
+<p class="precio">
+<span class="icon icon-flecha-corta-abajo">5%</span> <span class="tachado">32.500 €</span> <span class="price">30.900 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2017</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>61.200 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>150 cv</span></li>
+</ul>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6584517" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6584517" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6584517" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6584517)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.17 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-dsg-81kw-ref6544949">
+<div class="img-anuncio">
+<img alt="VOLKSWAGEN Taigo 1.0 TSI Life DSG 81kW" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/08/1533/115c6f3ee23262380f2ee1d0256b838a651962c2.png" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>12</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  VOLKSWAGEN Taigo 1.0 TSI Life DSG 81kW  </h2>
+<p class="precio financiacion">
+<span class="price">20.880 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2022</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>1 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>110 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">COMERCIAL JOSE VICENTE</p>
+<p><span>4,5</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="4.5" title="Puntuación promedio: 4.5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-dsg-81kw-ref6544949" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6544949" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6544949" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6544949" data-classname="AdUsedCar" data-km0="1" data-ng-class="comparatorStatus(6544949)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.18 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/hyundai-i30-ocasion/i30-fb-1-0-tgdi-n-line-120-ref6562481">
+<div class="img-anuncio">
+<img alt="HYUNDAI i30 FB 1.0 TGDI N-Line 120" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/04/1928/1b48a02f4cbd206a7048e2bc4fa471899be91c73.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>16</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  HYUNDAI i30 FB 1.0 TGDI N-Line 120  </h2>
+<p class="precio">
+<span class="price">15.900 € </span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2019</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>30.759 km</span></li>
+<li>Cambio: <span>Manual</span></li>
+<li>Potencia: <span>120 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">AUTOS BESER</p>
+<p><span>5,0</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="5" title="Puntuación promedio: 5">
+</div>
+</div>
+</a>
+<div class="otros-enlaces">
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6562481" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6562481" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6562481" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6562481)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.19 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/porsche-macan-ocasion/macan-gts-ref6470485">
+<div class="img-anuncio">
+<img alt="PORSCHE Macan GTS Aut." class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/09/1400/ea724fa172ba7a165912cdc49f5e8989793c491a.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>57</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  PORSCHE Macan GTS Aut.  </h2>
+<p class="precio financiacion">
+<span class="price">59.900 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2017</span></li>
+<li>Combustible: <span> Gasolina</span></li>
+<li>Kilómetros: <span>77.155 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>360 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">PADDOCK MOTORS</p>
+<p><span>0,0</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="0" title="Puntuación promedio: 0">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/porsche-macan-ocasion/macan-gts-ref6470485" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6470485" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6470485" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6470485" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6470485)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<!-- item.20 -->
+<article class="anuncio evaluacion" data-ng-mouseenter="overTextLinkPubli($event)" data-ng-mouseleave="leaveTextLinkPubli($event)">
+<a href="/coches-segunda-mano/volkswagen-golf-ocasion/golf-1-6tdi-sport-dsg7-115-1-ref6008965">
+<div class="img-anuncio">
+<img alt="VOLKSWAGEN Golf 1.6TDI Sport DSG7 85kW" class="type-image" itemprop="image" lazyload="1" src="//images0.autocasion.com/unsafe/260x146/ad/1121/04/6008965/eac157127727ad5e6cd4edeadfe04fb4.jpg" title=""/>
+<p class="fotos"><span class="icon icon-camara"></span>12</p>
+</div>
+<div class="contenido-anuncio">
+<h2 itemprop="name">  VOLKSWAGEN Golf 1.6TDI Sport DSG7 85kW  </h2>
+<p class="precio financiacion">
+<span class="price">18.300 € </span>
+<span class="financiacion">Con financiación</span>
+</p>
+<ul>
+<li>Provincia: <span>Valencia</span></li>
+<li>Matriculación: <span>2019</span></li>
+<li>Combustible: <span> Diésel</span></li>
+<li>Kilómetros: <span>119.001 km</span></li>
+<li>Cambio: <span>Automático</span></li>
+<li>Potencia: <span>115 cv</span></li>
+</ul>
+</div>
+<div class="valoracion">
+<span>Valoración del concesionario</span>
+<p class="titulo">TALLERES QUART (Renault)</p>
+<p><span>0,0</span>/5</p>
+<div class="rateit" data-rateit-readonly="true" data-rateit-starheight="15" data-rateit-starwidth="15" data-rateit-value="0" title="Puntuación promedio: 0">
+</div>
+</div>
+</a>
+<div class="otros-enlaces financiacion">
+<a class="info financingInfo" data-target="#modalFinanciacion" data-toggle="modal" data-url="/coches-segunda-mano/volkswagen-golf-ocasion/golf-1-6tdi-sport-dsg7-115-1-ref6008965" href="#"><span class="icon icon-exclamacion-arriba"></span></a>
+<span class="subtextlink-publi" data-referer="2c729e72aabf710ae5025b0e012c242c"></span>
+<ng-contact-modal class="" data-ad="6008965" data-icon="icon icon-mail-telefono" data-is-mobile="" data-is-tablet="" data-label="Contactar" data-list="" data-ng-cloak="" data-origin="3" data-utm-source=""><!-- CONTACT BUTTON IS NOT ALIVEEEE --></ng-contact-modal>
+<a class="favoritos icon icon-estrella-masa" data-ad="6008965" data-ng-favorite="" data-user="false" href="#" role="button" title="Favoritos"></a>
+<a class="comparador icon icon-comparador" data-ad="6008965" data-classname="AdUsedCar" data-km0="" data-ng-class="comparatorStatus(6008965)" href="" ng-click="clickAdToComparator($event)" title="Comparador"></a>
+</div>
+</article>
+<p class="text-publi">Publicidad</p>
+<div class="ng-non-bindable mega-publi" id="boton_native_tres">
+<script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("boton_native_tres"); });
+    </script>
+</div>
+</div>
+<div class="paginacion">
+<ul>
+<li>
+<span class="disabled">Anterior</span>
+</li>
+<li>Página 1 de 732</li>
+<li>
+<a href="/coches-segunda-mano/valencia?page=2">Siguiente</a>
+</li>
+</ul>
+</div>
+<div class="bloque">
+<div class="banner-publicidad">
+<a href="/vender-coche-rapido" target="_blank">
+<img alt="Venta Express" src="https://assets0.autocasion.com/ao-assets/img/express.svg?e74b3df6f46b9328cbee0380f7301c940"/>
+<p>  
+                        Venta Express  
+                        <span>Tasa tu coche y véndelo en 1 hora</span>
+</p>
+<span class="btn btn-primary">¡Quiero venderlo ya!</span>
+</a>
+</div>
+</div>
+<script charset="utf-8" defer="" type="text/javascript">
+            (function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+                arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(
+                O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js';
+                e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+        </script>
+<div class="googleAdsPlantilla">
+<div class="anuncioGoogle" id="adblock1"></div>
+</div>
+<script charset="utf-8" defer="" type="text/javascript">
+                var search =  'Coches+Valencia';
+                var pageOptions = {
+                    'pubId' : 'pub-8792759340913590',
+                    'query' : search,
+                    'channel' : 'autocasion,autocasion_parrilla',
+                    'ie' : 'utf8',
+                    'oe' : 'utf8',
+                    'hl' : 'es',
+                    'fontFamily' : 'arial',
+                    'fontSizeTitle' : '16px',
+                    'fontSizeDescription' : '12px',
+                    'fontSizeDomainLink' : '12px',
+                    'colorTitleLink' : '#0033CC',
+                    'colorText' : '#000000',
+                    'colorDomainLink' : '#000000',
+                    'colorBackground' : '#f6f6f6',
+                    'titleBold' : true,
+                    'rolloverAdBackgroundColor' : '#f6f6f6'
+                };
+                var adblock1 = {
+                    'container' : 'adblock1',
+                    'number' : 3,
+                    'width' : 'auto',
+                    'lines' : 2
+                };
+                _googCsa('ads', pageOptions, adblock1);
+            </script>
+<div class="bloque">
+<h2>Marcas de coches en Valencia</h2><ul class="listado-nube"><li><a href="/coches-segunda-mano/abarth-ocasion/valencia" title="49 ABARTH de Segunda Mano y Ocasión ">ABARTH Valencia</a></li><li><a href="/coches-segunda-mano/alfa-romeo-ocasion/valencia" title="76 ALFA ROMEO de Segunda Mano y Ocasión ">ALFA ROMEO Valencia</a></li><li><a href="/coches-segunda-mano/aston-martin-ocasion/valencia" title="8 ASTON MARTIN de Segunda Mano y Ocasión ">ASTON MARTIN Valencia</a></li><li><a href="/coches-segunda-mano/audi-ocasion/valencia" title="704 AUDI de Segunda Mano y Ocasión ">AUDI Valencia</a></li><li><a href="/coches-segunda-mano/bmw-ocasion/valencia" title="913 BMW de Segunda Mano y Ocasión ">BMW Valencia</a></li><li><a href="/coches-segunda-mano/cadillac-ocasion/valencia" title="7 CADILLAC de Segunda Mano y Ocasión ">CADILLAC Valencia</a></li><li><a href="/coches-segunda-mano/chevrolet-ocasion/valencia" title="23 CHEVROLET de Segunda Mano y Ocasión ">CHEVROLET Valencia</a></li><li><a href="/coches-segunda-mano/chrysler-ocasion/valencia" title="9 CHRYSLER de Segunda Mano y Ocasión ">CHRYSLER Valencia</a></li><li><a href="/coches-segunda-mano/citroen-ocasion/valencia" title="540 CITROEN de Segunda Mano y Ocasión ">CITROEN Valencia</a></li><li><a href="/coches-segunda-mano/cupra-ocasion/valencia" title="25 CUPRA de Segunda Mano y Ocasión ">CUPRA Valencia</a></li><li><a href="/coches-segunda-mano/dacia-ocasion/valencia" title="127 DACIA de Segunda Mano y Ocasión ">DACIA Valencia</a></li><li><a href="/coches-segunda-mano/daewoo-ocasion/valencia" title="8 DAEWOO de Segunda Mano y Ocasión ">DAEWOO Valencia</a></li><li><a href="/coches-segunda-mano/ds-ocasion/valencia" title="44 DS de Segunda Mano y Ocasión ">DS Valencia</a></li><li><a href="/coches-segunda-mano/ferrari-ocasion/valencia" title="18 FERRARI de Segunda Mano y Ocasión ">FERRARI Valencia</a></li><li><a href="/coches-segunda-mano/fiat-ocasion/valencia" title="271 FIAT de Segunda Mano y Ocasión ">FIAT Valencia</a></li><li><a href="/coches-segunda-mano/ford-ocasion/valencia" title="849 FORD de Segunda Mano y Ocasión ">FORD Valencia</a></li><li><a href="/coches-segunda-mano/honda-ocasion/valencia" title="109 HONDA de Segunda Mano y Ocasión ">HONDA Valencia</a></li><li><a href="/coches-segunda-mano/hyundai-ocasion/valencia" title="317 HYUNDAI de Segunda Mano y Ocasión ">HYUNDAI Valencia</a></li><li><a href="/coches-segunda-mano/infiniti-ocasion/valencia" title="39 INFINITI de Segunda Mano y Ocasión ">INFINITI Valencia</a></li><li><a href="/coches-segunda-mano/jaguar-ocasion/valencia" title="91 JAGUAR de Segunda Mano y Ocasión ">JAGUAR Valencia</a></li><li><a href="/coches-segunda-mano/jeep-ocasion/valencia" title="145 JEEP de Segunda Mano y Ocasión ">JEEP Valencia</a></li><li><a href="/coches-segunda-mano/kia-ocasion/valencia" title="448 KIA de Segunda Mano y Ocasión ">KIA Valencia</a></li><li><a href="/coches-segunda-mano/lancia-ocasion/valencia" title="8 LANCIA de Segunda Mano y Ocasión ">LANCIA Valencia</a></li><li><a href="/coches-segunda-mano/land-rover-ocasion/valencia" title="144 LAND-ROVER de Segunda Mano y Ocasión ">LAND-ROVER Valencia</a></li><li><a href="/coches-segunda-mano/lexus-ocasion/valencia" title="71 LEXUS de Segunda Mano y Ocasión ">LEXUS Valencia</a></li><li><a href="/coches-segunda-mano/maserati-ocasion/valencia" title="18 MASERATI de Segunda Mano y Ocasión ">MASERATI Valencia</a></li><li><a href="/coches-segunda-mano/mazda-ocasion/valencia" title="183 MAZDA de Segunda Mano y Ocasión ">MAZDA Valencia</a></li><li><a href="/coches-segunda-mano/mercedes-benz-ocasion/valencia" title="949 MERCEDES-BENZ de Segunda Mano y Ocasión ">MERCEDES-BENZ Valencia</a></li><li><a href="/coches-segunda-mano/mini-ocasion/valencia" title="268 MINI de Segunda Mano y Ocasión ">MINI Valencia</a></li><li><a href="/coches-segunda-mano/mitsubishi-ocasion/valencia" title="91 MITSUBISHI de Segunda Mano y Ocasión ">MITSUBISHI Valencia</a></li><li><a href="/coches-segunda-mano/nissan-ocasion/valencia" title="390 NISSAN de Segunda Mano y Ocasión ">NISSAN Valencia</a></li><li><a href="/coches-segunda-mano/opel-ocasion/valencia" title="642 OPEL de Segunda Mano y Ocasión ">OPEL Valencia</a></li><li><a href="/coches-segunda-mano/peugeot-ocasion/valencia" title="792 PEUGEOT de Segunda Mano y Ocasión ">PEUGEOT Valencia</a></li><li><a href="/coches-segunda-mano/porsche-ocasion/valencia" title="131 PORSCHE de Segunda Mano y Ocasión ">PORSCHE Valencia</a></li><li><a href="/coches-segunda-mano/renault-ocasion/valencia" title="588 RENAULT de Segunda Mano y Ocasión ">RENAULT Valencia</a></li><li><a href="/coches-segunda-mano/rover-ocasion/valencia" title="5 ROVER de Segunda Mano y Ocasión ">ROVER Valencia</a></li><li><a href="/coches-segunda-mano/saab-ocasion/valencia" title="8 SAAB de Segunda Mano y Ocasión ">SAAB Valencia</a></li><li><a href="/coches-segunda-mano/seat-ocasion/valencia" title="732 SEAT de Segunda Mano y Ocasión ">SEAT Valencia</a></li><li><a href="/coches-segunda-mano/skoda-ocasion/valencia" title="157 SKODA de Segunda Mano y Ocasión ">SKODA Valencia</a></li><li><a href="/coches-segunda-mano/smart-ocasion/valencia" title="46 SMART de Segunda Mano y Ocasión ">SMART Valencia</a></li><li><a href="/coches-segunda-mano/ssangyong-ocasion/valencia" title="55 SSANGYONG de Segunda Mano y Ocasión ">SSANGYONG Valencia</a></li><li><a href="/coches-segunda-mano/subaru-ocasion/valencia" title="26 SUBARU de Segunda Mano y Ocasión ">SUBARU Valencia</a></li><li><a href="/coches-segunda-mano/suzuki-ocasion/valencia" title="63 SUZUKI de Segunda Mano y Ocasión ">SUZUKI Valencia</a></li><li><a href="/coches-segunda-mano/tesla-ocasion/valencia" title="11 TESLA de Segunda Mano y Ocasión ">TESLA Valencia</a></li><li><a href="/coches-segunda-mano/toyota-ocasion/valencia" title="457 TOYOTA de Segunda Mano y Ocasión ">TOYOTA Valencia</a></li><li><a href="/coches-segunda-mano/volkswagen-ocasion/valencia" title="914 VOLKSWAGEN de Segunda Mano y Ocasión ">VOLKSWAGEN Valencia</a></li><li><a href="/coches-segunda-mano/volvo-ocasion/valencia" title="183 VOLVO de Segunda Mano y Ocasión ">VOLVO Valencia</a></li><li class="ver-mas"><a href="#">Ver más</a></li></ul><h2>Provincias</h2><ul class="listado-nube"><li><a href="/coches-segunda-mano/alava" title="1361 de Segunda Mano y Ocasión en Álava">Coches de ocasión en Álava</a></li><li><a href="/coches-segunda-mano/albacete" title="2598 de Segunda Mano y Ocasión en Albacete">Coches de ocasión en Albacete</a></li><li><a href="/coches-segunda-mano/alicante" title="5790 de Segunda Mano y Ocasión en Alicante">Coches de ocasión en Alicante</a></li><li><a href="/coches-segunda-mano/almeria" title="1404 de Segunda Mano y Ocasión en Almería">Coches de ocasión en Almería</a></li><li><a href="/coches-segunda-mano/asturias" title="1480 de Segunda Mano y Ocasión en Asturias">Coches de ocasión en Asturias</a></li><li><a href="/coches-segunda-mano/avila" title="1047 de Segunda Mano y Ocasión en Ávila">Coches de ocasión en Ávila</a></li><li><a href="/coches-segunda-mano/badajoz" title="1390 de Segunda Mano y Ocasión en Badajoz">Coches de ocasión en Badajoz</a></li><li><a href="/coches-segunda-mano/barcelona" title="17598 de Segunda Mano y Ocasión en Barcelona">Coches de ocasión en Barcelona</a></li><li><a href="/coches-segunda-mano/burgos" title="1183 de Segunda Mano y Ocasión en Burgos">Coches de ocasión en Burgos</a></li><li><a href="/coches-segunda-mano/caceres" title="539 de Segunda Mano y Ocasión en Cáceres">Coches de ocasión en Cáceres</a></li><li><a href="/coches-segunda-mano/cadiz" title="979 de Segunda Mano y Ocasión en Cádiz">Coches de ocasión en Cádiz</a></li><li><a href="/coches-segunda-mano/cantabria" title="1601 de Segunda Mano y Ocasión en Cantabria">Coches de ocasión en Cantabria</a></li><li><a href="/coches-segunda-mano/castellon" title="2778 de Segunda Mano y Ocasión en Castellón">Coches de ocasión en Castellón</a></li><li><a href="/coches-segunda-mano/ceuta" title="79 de Segunda Mano y Ocasión en Ceuta">Coches de ocasión en Ceuta</a></li><li><a href="/coches-segunda-mano/ciudad-real" title="2659 de Segunda Mano y Ocasión en Ciudad Real">Coches de ocasión en Ciudad Real</a></li><li><a href="/coches-segunda-mano/cordoba" title="3473 de Segunda Mano y Ocasión en Córdoba">Coches de ocasión en Córdoba</a></li><li><a href="/coches-segunda-mano/cuenca" title="407 de Segunda Mano y Ocasión en Cuenca">Coches de ocasión en Cuenca</a></li><li><a href="/coches-segunda-mano/girona" title="2001 de Segunda Mano y Ocasión en Girona">Coches de ocasión en Girona</a></li><li><a href="/coches-segunda-mano/granada" title="4335 de Segunda Mano y Ocasión en Granada">Coches de ocasión en Granada</a></li><li><a href="/coches-segunda-mano/guadalajara" title="774 de Segunda Mano y Ocasión en Guadalajara">Coches de ocasión en Guadalajara</a></li><li><a href="/coches-segunda-mano/guipuzcoa" title="1333 de Segunda Mano y Ocasión en Guipúzcoa">Coches de ocasión en Guipúzcoa</a></li><li><a href="/coches-segunda-mano/huelva" title="339 de Segunda Mano y Ocasión en Huelva">Coches de ocasión en Huelva</a></li><li><a href="/coches-segunda-mano/huesca" title="908 de Segunda Mano y Ocasión en Huesca">Coches de ocasión en Huesca</a></li><li><a href="/coches-segunda-mano/islas-baleares" title="580 de Segunda Mano y Ocasión en Islas Baleares">Coches de ocasión en Islas Baleares</a></li><li><a href="/coches-segunda-mano/jaen" title="819 de Segunda Mano y Ocasión en Jaén">Coches de ocasión en Jaén</a></li><li><a href="/coches-segunda-mano/la-coruna" title="1399 de Segunda Mano y Ocasión en La Coruña">Coches de ocasión en La Coruña</a></li><li><a href="/coches-segunda-mano/la-rioja" title="914 de Segunda Mano y Ocasión en La Rioja">Coches de ocasión en La Rioja</a></li><li><a href="/coches-segunda-mano/las-palmas" title="458 de Segunda Mano y Ocasión en Las Palmas">Coches de ocasión en Las Palmas</a></li><li><a href="/coches-segunda-mano/leon" title="855 de Segunda Mano y Ocasión en León">Coches de ocasión en León</a></li><li><a href="/coches-segunda-mano/lleida" title="1274 de Segunda Mano y Ocasión en Lleida">Coches de ocasión en Lleida</a></li><li><a href="/coches-segunda-mano/lugo" title="954 de Segunda Mano y Ocasión en Lugo">Coches de ocasión en Lugo</a></li><li><a href="/coches-segunda-mano/madrid" title="26645 de Segunda Mano y Ocasión en Madrid">Coches de ocasión en Madrid</a></li><li><a href="/coches-segunda-mano/malaga" title="9778 de Segunda Mano y Ocasión en Málaga">Coches de ocasión en Málaga</a></li><li><a href="/coches-segunda-mano/murcia" title="4123 de Segunda Mano y Ocasión en Murcia">Coches de ocasión en Murcia</a></li><li><a href="/coches-segunda-mano/navarra" title="3780 de Segunda Mano y Ocasión en Navarra">Coches de ocasión en Navarra</a></li><li><a href="/coches-segunda-mano/orense" title="440 de Segunda Mano y Ocasión en Orense">Coches de ocasión en Orense</a></li><li><a href="/coches-segunda-mano/palencia" title="505 de Segunda Mano y Ocasión en Palencia">Coches de ocasión en Palencia</a></li><li><a href="/coches-segunda-mano/pontevedra" title="1195 de Segunda Mano y Ocasión en Pontevedra">Coches de ocasión en Pontevedra</a></li><li><a href="/coches-segunda-mano/salamanca" title="997 de Segunda Mano y Ocasión en Salamanca">Coches de ocasión en Salamanca</a></li><li><a href="/coches-segunda-mano/segovia" title="768 de Segunda Mano y Ocasión en Segovia">Coches de ocasión en Segovia</a></li><li><a href="/coches-segunda-mano/sevilla" title="7865 de Segunda Mano y Ocasión en Sevilla">Coches de ocasión en Sevilla</a></li><li><a href="/coches-segunda-mano/soria" title="326 de Segunda Mano y Ocasión en Soria">Coches de ocasión en Soria</a></li><li><a href="/coches-segunda-mano/sta-c-de-tenerife" title="203 de Segunda Mano y Ocasión en Sta. C. de Tenerife">Coches de ocasión en Sta. C. de Tenerife</a></li><li><a href="/coches-segunda-mano/tarragona" title="1719 de Segunda Mano y Ocasión en Tarragona">Coches de ocasión en Tarragona</a></li><li><a href="/coches-segunda-mano/teruel" title="208 de Segunda Mano y Ocasión en Teruel">Coches de ocasión en Teruel</a></li><li><a href="/coches-segunda-mano/toledo" title="3125 de Segunda Mano y Ocasión en Toledo">Coches de ocasión en Toledo</a></li><li><a href="/coches-segunda-mano/valladolid" title="831 de Segunda Mano y Ocasión en Valladolid">Coches de ocasión en Valladolid</a></li><li><a href="/coches-segunda-mano/vizcaya" title="7439 de Segunda Mano y Ocasión en Vizcaya">Coches de ocasión en Vizcaya</a></li><li><a href="/coches-segunda-mano/zamora" title="510 de Segunda Mano y Ocasión en Zamora">Coches de ocasión en Zamora</a></li><li><a href="/coches-segunda-mano/zaragoza" title="4197 de Segunda Mano y Ocasión en Zaragoza">Coches de ocasión en Zaragoza</a></li><li class="ver-mas"><a href="#">Ver más</a></li></ul><h2>Modelos de coches por combustibles en Valencia de segunda mano</h2><ul class="listado-nube"><li><a href="/coches-segunda-mano/valencia/diesel" title="5628 Diésel ">Coches Diésel  en Valencia</a></li><li><a href="/coches-segunda-mano/valencia/electrico" title="129 Eléctrico ">Coches Eléctrico  en Valencia</a></li><li><a href="/coches-segunda-mano/valencia/gas" title="48 Gas ">Coches Gas  en Valencia</a></li><li><a href="/coches-segunda-mano/valencia/gasolina" title="5426 Gasolina ">Coches Gasolina  en Valencia</a></li><li><a href="/coches-segunda-mano/valencia/hibrido" title="456 Híbrido ">Coches Híbrido  en Valencia</a></li><li><a href="/coches-segunda-mano/valencia/hibrido-enchufable" title="87 Híbrido Enchufable ">Coches Híbrido Enchufable  en Valencia</a></li><li class="ver-mas"><a href="#">Ver más</a></li></ul><h2>Resto de categorías en Valencia</h2><ul class="listado-nube"><li><a href="/coches-nuevos/valencia-provincia">Coches nuevos en Valencia</a></li><li><a href="/coches-km0/valencia">Coches km0 en Valencia</a></li><li><a href="/venta-coches-clasicos/valencia">Coches clásicos en Valencia</a></li><li><a href="/vehiculos-industriales-segunda-mano/valencia">Furgonetas en Valencia</a></li></ul>
+</div>
+<p class="textoSEO">
+             Nuestra selección de 11701 coches de segunda mano en Valencia. Las ofertas de coches de segunda mano pensadas para ti.
+                            También tenemos <a class="otros" href="/coches-nuevos/valencia-provincia" rel="nofollow">coches nuevos</a> para ti.
+            </p>
+<div class="bloque">
+</div>
+<div class="bloque">
+<h3>Buscar coche por tipo de combustible</h3>
+<ul class="listado-nube">
+<li>
+<a href="/combustible/diesel" title="Diésel">Diésel</a>
+</li>
+<li>
+<a href="/combustible/gasolina" title="Gasolina">Gasolina</a>
+</li>
+<li>
+<a href="/combustible/electrico" title="Eléctrico">Eléctrico</a>
+</li>
+<li>
+<a href="/combustible/hibrido" title="Híbrido">Híbrido</a>
+</li>
+<li>
+<a href="/combustible/hibrido-enchufable" title="Híbrido enchufable">Híbrido enchufable</a>
+</li>
+<li>
+<a href="/combustible/gas" title="Gas">Gas</a>
+</li>
+<li class="ver-mas"><a href="#">Ver más</a></li>
+</ul>
+</div> <div class="bloque">
+<h3>Búsquedas populares que pueden interesarte</h3>
+<ul class="listado-nube">
+<li>
+<a href="https://www.autocasion.com/ofertas-renting-coches" title="Ofertas Renting de Coches">Ofertas Renting de Coches</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/actualidad/microsites/ecologicos" title="Coches ecológicos">Coches ecológicos</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/marcas/audi" title="Audi">Audi</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/marcas/jeep" title="Jeep">Jeep</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/coches-nuevos/hyundai/kona" title="Hyundai Kona">Hyundai Kona</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/coches-nuevos/peugeot/3008-suv" title="Peugeot 3008">Peugeot 3008</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/coches-segunda-mano/fiat-500-ocasion" title="Fiat 500">Fiat 500</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/otros-segunda-mano-caravanas/autocaravana" title="Autocaravanas">Autocaravanas</a>
+</li>
+<li>
+<a href="https://www.autocasion.com/coches-nuevos/nissan/qashqai" title="Nissan Qashqai">Nissan Qashqai</a>
+</li>
+<li class="ver-mas"><a href="#">Ver más</a></li>
+</ul>
+</div>
+</section>
+<aside class="ng-non-bindable col-der hidden-sm publi-fixed">
+<p class="ng-non-bindable text-publi">Publicidad</p>
+<div class="roba" id="robapaginas"> <script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("robapaginas"); });
+    </script>
+</div>
+<div class="ng-non-bindable roba" id="robapaginas_dos"> <script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("robapaginas_dos"); });
+    </script>
+</div>
+<div class="robapaginas_tres">
+<p class="ng-non-bindable text-publi">Publicidad</p>
+<div class="ng-non-bindable roba" id="robapaginas_tres">
+<script defer="" type="text/javascript">
+        googletag.cmd.push(function () { window.googletag.display("robapaginas_tres"); });
+    </script>
+</div>
+</div>
+</aside>
+</div>
+</div>
+<div aria-hidden="true" class="modal fade" id="modalFavorito">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">×</span></button>
+<p class="hache2">Guardar favorito</p>
+</div>
+<div class="modal-body" data-ng-controller="AuthCtrl" data-ng-init="init('favorite')">
+<p>Crea una lista con los anuncios que te gusten para tenerlos siempre a mano</p>
+<div data-ng-cloak="" data-ng-form="login" data-ng-show="!hasFinished()">
+<div class="form-group" data-ng-class="{ 'has-error': login.email.$invalid &amp;&amp; (login.email.$touched || login.email.$dirty || submitted || login.$submitted) }" data-ng-if="isStep(1) || isStep(2) || isStep(3)">
+<label for="login_email_302752726">Tu email:</label>
+<input auto-fill-sync="" data-email="" data-ng-class="{ 'disabled': isLogged || !isStep(1) }" data-ng-disabled="isLogged || !isStep(1)" data-ng-init="model.email = null" data-ng-model="model.email" id="login_email_302752726" name="email" ng-validate-email="" required="required" type="email"/>
+<a data-ng-click="changeEmail()" data-ng-hide="isStep(1)" href="javascript:;">Cambiar e-mail</a>
+<div class="help-block" data-ng-cloak="" data-ng-if="login.email.$invalid &amp;&amp; (submitted || login.email.$touched || login.email.$dirty)" data-ng-messages="login.email.$error">
+<p data-ng-message="required">Tienes que rellenar este campo.</p>
+<p data-ng-message="minlength">Demasiado corto.</p>
+<p data-ng-message="maxlength">Demasiado largo.</p>
+<p data-ng-message="email">Introduce un correo electrónico válido.</p>
+<p data-ng-message="phone">El formato de teléfono es incorrecto.</p>
+<p data-ng-message="password">La contraseña no coincide.</p>
+<p data-ng-message="invalid">El campo es inválido.</p>
+</div>
+</div>
+<div data-ng-cloak="" data-ng-if="isStep(2)">
+<div class="form-group" data-ng-class="{ 'has-error': login.password.$invalid &amp;&amp; (login.password.$touched || login.password.$dirty || submitted || login.$submitted) }">
+<label for="login_password">Tu contraseña:</label>
+<input auto-fill-sync="" data-ng-init="model.password = null" data-ng-model="model.password" id="login_password" name="password" required="required" type="password"/>
+<div class="help-block" data-ng-cloak="" data-ng-if="login.password.$invalid &amp;&amp; (submitted || login.password.$touched || login.password.$dirty)" data-ng-messages="login.password.$error">
+<p data-ng-message="required">Tienes que rellenar este campo.</p>
+<p data-ng-message="minlength">Demasiado corto.</p>
+<p data-ng-message="maxlength">Demasiado largo.</p>
+<p data-ng-message="email">Introduce un correo electrónico válido.</p>
+<p data-ng-message="phone">El formato de teléfono es incorrecto.</p>
+<p data-ng-message="password">La contraseña no coincide.</p>
+<p data-ng-message="invalid">El campo es inválido.</p>
+</div>
+</div>
+</div>
+<div data-ng-cloak="" data-ng-if="isStep(3)">
+<p>Para poder activar el aviso, es importante que seas un <span>usuario registrado en Autocasión</span>:</p>
+<div class="form-group" data-ng-class="{ 'has-error': login.password.$invalid &amp;&amp; (login.password.$touched || login.password.$dirty || submitted || login.$submitted) }">
+<label for="login_password">Contraseña:</label>
+<input auto-fill-sync="" data-match="model.repeat_password" data-ng-init="model.password = null" data-ng-model="model.password" id="login_password" name="password" required="required" type="password"/>
+<div class="help-block" data-ng-cloak="" data-ng-if="login.password.$invalid &amp;&amp; (submitted || login.password.$touched || login.password.$dirty)" data-ng-messages="login.password.$error">
+<p data-ng-message="required">Tienes que rellenar este campo.</p>
+<p data-ng-message="minlength">Demasiado corto.</p>
+<p data-ng-message="maxlength">Demasiado largo.</p>
+<p data-ng-message="email">Introduce un correo electrónico válido.</p>
+<p data-ng-message="phone">El formato de teléfono es incorrecto.</p>
+<p data-ng-message="password">La contraseña no coincide.</p>
+<p data-ng-message="invalid">El campo es inválido.</p>
+</div>
+</div>
+<div class="form-group" data-ng-class="{ 'has-error': login.repeat_password.$invalid &amp;&amp; (login.repeat_password.$touched || login.repeat_password.$dirty || submitted || login.$submitted) }">
+<label for="login_repeat_password">Repite la contraseña:</label>
+<input auto-fill-sync="" data-ng-init="model.repeat_password = null" data-ng-model="model.repeat_password" id="login_repeat_password" name="repeat_password" required="required" type="password"/>
+<div class="help-block" data-ng-cloak="" data-ng-if="login.repeat_password.$invalid &amp;&amp; (submitted || login.repeat_password.$touched || login.repeat_password.$dirty)" data-ng-messages="login.repeat_password.$error">
+<p data-ng-message="required">Tienes que rellenar este campo.</p>
+<p data-ng-message="minlength">Demasiado corto.</p>
+<p data-ng-message="maxlength">Demasiado largo.</p>
+<p data-ng-message="email">Introduce un correo electrónico válido.</p>
+<p data-ng-message="phone">El formato de teléfono es incorrecto.</p>
+<p data-ng-message="password">La contraseña no coincide.</p>
+<p data-ng-message="invalid">El campo es inválido.</p>
+</div>
+</div>
+<div class="form-group">
+<div class="checkbox">
+<label for="login_privacy_check">
+<input class="politica-priv" data-ng-model="model.privacy_check" id="login_privacy_check" name="privacyCheck" required="required" type="checkbox"/>
+<span class="icon"></span>He leído la <a href="/politica-privacidad" target="_blank">política de privacidad</a>
+</label>
+</div>
+<div class="help-block" data-ng-cloak="" data-ng-if="login.privacy_check.$invalid &amp;&amp; (submitted || login.privacy_check.$touched || login.privacy_check.$dirty)" data-ng-messages="login.privacy_check.$error">
+<p data-ng-message="required">Tienes que rellenar este campo.</p>
+<p data-ng-message="minlength">Demasiado corto.</p>
+<p data-ng-message="maxlength">Demasiado largo.</p>
+<p data-ng-message="email">Introduce un correo electrónico válido.</p>
+<p data-ng-message="phone">El formato de teléfono es incorrecto.</p>
+<p data-ng-message="password">La contraseña no coincide.</p>
+<p data-ng-message="invalid">El campo es inválido.</p>
+</div>
+</div>
+<p class="legal">El responsable del tratamiento de los datos personales facilitados en el presente formulario es Sumauto Motor, S.L quien los tratará con las siguientes finalidades: (i) prestarte los servicios solicitados siendo la base legal para este tratamiento la relación contractual que nos vincula contigo y (ii) remitirte comunicaciones comerciales cuando y en los términos que los hayas aceptado a través de las correspondientes casillas, siendo la base legal para este tratamiento el interés legítimo de  Sumauto Motor, S.L o tu consentimiento. Tus datos podrán ser compartidos con prestadores de servicios que deban tener acceso a estos datos en virtud de la prestación de servicios así como a terceros cuyos servicios nos solicites y a otras entidades del Grupo Vocento para fines administrativos internos. Tienes derecho a acceder, rectificar y suprimir tus datos, así como otros derechos, como se explica en la <a href="/politica-privacidad" rel="nofollow" target="_blank">información adicional sobre privacidad</a>. Al hacer click en el botón “¿Ya? Regístrate como usuario” declaras conocer y entender la política de privacidad de Sumauto Motor, S.L</p> </div>
+<button class="btn btn-primary" data-ng-class="{'disabled': login.$invalid || loading, 'loading': loading }" data-ng-click="go($event)" data-ng-cloak="" data-ng-disabled="login.$invalid || loading" data-ng-if="isStep(1) || isStep(2) || isStep(3)" type="submit">[[ loading ? 'Enviando...' : submitLabel ]]</button>
+</div>
+<div data-ng-cloak="" data-ng-if="isStep(5)">
+<p class="alert alert-success"><span class="icon icon-check"></span> Se ha guardado en favoritos</p>
+<p>Te hemos enviado un email con un enlace para validar tu cuenta.</p>
+<p>¿No lo has recibido? <a data-ng-click="resendEmail()" href="javascript:;">Enviar de nuevo</a></p>
+<p data-ng-show="emailResent">Se ha reenviado el email para validar la cuenta.</p>
+<p>Puedes gestionar tus envíos y notificaciones desde tu <a href="/particular/area-privada/notificaciones">área privada</a></p>
+<button class="btn btn-primary" onclick="location.reload()" type="button">Aceptar</button>
+</div>
+<div data-ng-if="hasFinished()">
+<p class="alert alert-success"><span class="icon icon-check"></span> Se ha guardado en favoritos</p>
+<button class="btn btn-primary" onclick="location.reload()" type="button">Aceptar</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="modalContactarLabel" class="modal fade modalContactar" id="modalContactar" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<img src="https://assets0.autocasion.com/bundles/autocasionadmin/theme/global/img/loading.gif"/>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="modalMultimailingLabel" class="modal fade" data-ng-controller="MultimailingFormController" data-ng-origin="3" id="modalMultimailing" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content"></div>
+</div>
+</div>
+<div aria-hidden="true" class="modal fade" id="modalFinanciacion">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button aria-label="Close" class="close" data-dismiss="modal" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<p class="hache2">Financiación</p>
+</div>
+<div class="modal-body">
+<p>El vendedor ofrece una rebaja en el precio si realizas la financiación con él.</p>
+<p>Comprueba las condiciones de financiación en el detalle del anuncio y contacta con el vendedor.</p>
+</div>
+<div class="modal-footer">
+<a class="btn btn-blue" href="#" id="financingDetailButton">Ver más detalles</a>
+<a aria-label="Close" class="close" data-dismiss="modal" href="#">Seguir navegando</a>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container">
+<ul>
+<li>
+<span content="Autocasion" itemprop="name">Sobre Autocasión</span>
+<a href="/sobre-autocasion">Sobre nosotros</a>
+<a href="/contacto-sugerencias">Contacto y sugerencias</a>
+<a href="/aviso-legal" rel="nofollow">Aviso legal</a>
+<a href="/politica-privacidad" rel="nofollow">Política de privacidad</a>
+<a href="" onclick="event.preventDefatult;Voonto.cmp.show()" rel="nofollow">Política de cookies</a>
+<a href="/mapa-web">Mapa web</a>
+</li>
+<li>
+<span>Comprar</span>
+<a href="/coches-segunda-mano">Coches de segunda mano</a>
+<a href="/coches-nuevos">Coches nuevos</a>
+<a href="/actualidad">Actualidad <span class="hidden-sm">sobre coches</span></a>
+<a href="/coches-segunda-mano/particular">Coches de particulares</a>
+<a href="/concesionarios">Directorio de concesionarios</a>
+<a href="/combustible">Buscar por combustible</a>
+<a href="/ferias">Ferias</a>
+<a href="/comparador-coches">Comparar anuncios</a>
+<a href="/consejos-seguridad#buy">Comprar seguro</a>
+<a href="https://www.autocasion.com/diccionario">Diccionario del motor</a>
+<a href="/ofertas-renting-coches">Renting coches</a>
+</li>
+<li>
+<span>Vender</span>
+<a href="/vender-coche">Anuncia tu coche</a>
+<a href="/tasacion-de-coches">Tasa tu coche</a>
+<a href="/vender-coche-rapido">Vender a profesional</a>
+<a href="/consejos-seguridad#sell">Vender seguro</a>
+<a href="/marcas">Fichas técnicas y precios</a>
+</li>
+<li>
+<span>Síguenos</span>
+<a href="https://twitter.com/Autocasion" itemprop="sameAs" rel="nofollow" target="_blank"><span class="icon icon-twitter"></span>Twitter</a>
+<a href="https://www.facebook.com/autocasion" itemprop="sameAs" rel="nofollow" target="_blank"><span class="icon icon-facebook"></span>Facebook</a>
+<a href="https://www.youtube.com/user/autocasioncom" itemprop="sameAs" rel="nofollow" target="_blank"><span class="icon icon-youtube"></span>YouTube</a>
+</li>
+<li>
+<span>Nuestra App</span>
+<a href="https://itunes.apple.com/es/app/autocasion.com/id580457760?mt=8" target="_blank">
+<span class="icon icon-ios"></span> Descárgala en IOS
+                    </a>
+<a href="https://play.google.com/store/apps/details?id=com.vocento.autocasion&amp;hl=es" target="_blank">
+<span class="icon icon-android"></span> Descárgala en Android
+                    </a>
+</li>
+</ul>
+<div class="vocento">
+<img alt="Vocento" height="14" src="https://assets0.autocasion.com/ao-assets/img/logo_vocento.png?3dcfa6ee58bb69cb00060392fe1cc6110" width="91"/>
+<p>
+<a href="http://www.abc.es/" target="_blank">abc.es</a>
+<a href="http://www.finanzas.com/" target="_blank">finanzas.com</a>
+<a href="http://www.mujerhoy.com/" target="_blank">mujerhoy.com</a>
+<a href="https://www.pisos.com/" target="_blank">pisos.com</a>
+<a href="http://www.motocasion.com/" target="_blank">motocasion.com</a>
+<a href="http://www.unoauto.com/" target="_blank">unoauto.com</a>
+</p>
+<p>©2000-2022 Autocasion.com - Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+<a class="subir-flecha hidden"><span class="icon icon-flecha-arriba"></span></a>
+<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+<script type="text/javascript">
+            window.AUTO_TRANS = {"total":"Total","advertiser":"Anunciante","device":"Dispositivo","leadManagement":"Lead Management","vo":"Ocasi\u00f3n","vn":"VN Stock","vi":"Industriales + Furgonetas","period":"Fecha","adView":"Fichas vistas","searches":"B\u00fasquedas","impressions":"Anuncios listados","newAds":"Anuncios nuevos","activeAds":"Anuncios Activos","autotel":"Llamadas","messages":"Mensajes","adPhoneView":"Ver tfno","leads":"Leads","qualifiedMessages":"Contactos generados","particular":"Particular","profesional":"Profesional","desktop":"Escritorio","mobile":"M\u00f3vil","as24":"AO + A24 (bundle online)","messAs24":"Mensajes A24 (bundle online)","totalAs24":"AO + A24 (bundle online)","app":"APP","from":"Desde","to":"Hasta","daily":"Diario","weekly":"Semanal","monthly":"Mensual","n_searches":"B\u00fasquedas","n_views":"Visitas","n_contacts":"Contactos","n_phone_views":"Ver tel\u00e9fono","n_calls":"Llamadas"}
+            window.AUT_CONF = {
+                debug: false,
+                device: 'desktop',
+                isMobile: false,
+                isTablet: false,
+                isFullPc: true,
+                idAppi: 'UA-431099-1',
+                isWebpack: true,
+                contentPlatform: "contenido-web"
+            };
+        </script>
+<script type="text/javascript">
+            window.__APP_CONTEXT__ = {"mobileDetect":{"isMobile":false,"isTablet":false,"mobileGrade":"C"},"endpoint":"\/graphql\/","router":{"baseUrl":"","route":"vo_list","context":[]},"environment":"prod","enable_tracking":true,"disableAds":"","tracking":[["H4sIAAAAAAAAAzVSxxKjSgz8F5.3qCHDkWAPOYexX.0BY2xyMJmvX3x4Okg6dEvdKv13UahRFf6PI","Y9DitdYYeXPxduIlGFQDp4ti7BsEtY4qo.hDx","6O6y4PvGxmOBWJBNO2djb","0wn6Dl2K6RHSM7tGEQDKF3p7BRiSCzRKstGLVx7nC3MjLKUjldnO","GE8y5Ss0PUx8P5L5bXfigopHwvnk5JfiaH4ZKI2hLYzSEIf2sBUc3TsZ94kEfiOtnNsOpdSfYvL4ERJ7EGwmeG3cIDSLhdd80djXd7VPFNIif7u3F4KAL5S41MdL7dI1I0wQdCb2Pxa.hkXQgakjWq70M0njZe1JTTprvCvHxIJkYQQieRPtmgmR2t","RVxjaGMbdXkt0YNl5YPqfn6liuSD9wuSZOnWGbqKiOJ1FGiFCmzpgLbbuVu8KE7bo","X4GNcZT9BfnP1LbK9uB2b7LCxYNKN68MNLhzzO6gbY6zUYJHwdYano5HQsZ2NCjfkc1sTabVwghIuzWbQ2KzOaRvRjNHkdVVMsKo3ohgn4VUmrvZ6ojjLSA0LudXe1pyeT73tlHG2t0Mr0xM2D2jBzT8drW8trF2PKcRvgull7i6ZF57VK8ZoxD2tdtPYsp.drzpApms7MGhaK0SiBr8Jno","81k01Yc..Qs.n1flGlx8eEqcSj8A8miz8gsu","d4dTjXaUmdvZm6AfapyqhemBOlv0PhU9nQLlhOJNOsqRVeDl2ex2FwGCHcrqS.TguIlqvJoQLsPtMAIow0e","2IuyOnfD19zxodzqIhoKJVlFybKqEGDCsUlrta2YI9Is4JcrMLp02ZEelJ2nWfOb3Jf9TJz5G2DfGEXzqMDxbij0Cge9xPEPEGhnfV7Ewb7LlDo7ndxOPo1aAMZ.92Uf5","pFB5ZUXR2gi6sgnD5.w","lYCT7cgMAAA"],["H4sIAAAAAAAAAzWRS5OiMACE","4vnKUoMoBzD06gDAdaQsDUHXgNIRsHgCPn1y2X70Jf.qrqq..","mqAkE","0um0cIMO4KWu","nYHKhsL","ap9qPIsFhkea90iWe3s9VCyO.3ycLjmCehmQ8JlqIxuaOr81B6B.9a1KQAAEyzMwGvVZkSnkB7X8SOyjB8kDEfO0ygml7iIK9IBYLfzxKXhTA8S4zsQO34wWZfhc4QaX","YeFv6oQLFHTkIsqaK0VmF","kQNo64zbUaIcCBfMrWSK2wxdoSyvRN85qaStCHhS0CHvtPYvCO.Caa2WmS5u3VhnjhPmMqf7IipCPT3UltsdNF3fQoWmqK9lVP9x9mKm2YUfN0jwnRAIAnaQfd0uXsdsjCFRd03Qc2zagUALTLusUleezeY1T56jZ97T2D7oVVLbIZpQat0sq01lk","YuI","zRemSSs7tGDPORz3bPtG9m3xh7lnqgGjKyICj16","UzmSyFFNZS97OaliPedm462Wbr3.M.s0rxAEAAA"]],"particularRoutes":{"ads":"\/particular\/area-privada\/anuncios","messages":"\/particular\/area-privada\/mensajes","alerts":"\/particular\/area-privada\/alertas","favorites":"\/particular\/area-privada\/favoritos","subscriptions":"\/particular\/area-privada\/notificaciones","profile":"\/particular\/area-privada\/mis-datos","createAd":"\/vender-coche"},"appRoutes":{"superuser_advertiser_list":"\/superusuario\/anunciantes","contact_professional":"\/atencion-al-profesional","create_ad_index":"\/vender-coche","export_ads":"\/advertiser\/anuncios\/xlsx","login":"\/login"}}
+        </script>
+<script src="https://assets0.autocasion.com/ao-assets/0.c9e74457742ed1f58049.chunk.js"></script>
+<script src="https://assets0.autocasion.com/ao-assets/navbarVue.d9d57792ec672f974dfb.bundle.js"></script>
+<script type="text/javascript">
+                    (function(){var x = document.createElement('script');x.async = true;
+                        x.src = "//creativecdn.com/tags?type=script&id=pr_v7yzRP3uXM4B0nwKFnFT_listing_6183508,6632160,6508848,6373812,6597760,6544154,6523482,6536614,6430642,6584498,6585993,6584517,6544949,6562481,6470485,6008965";
+                        document.getElementsByTagName('head')[0].appendChild(x);}());
+                </script>
+<script src="https://assets0.autocasion.com/ao-assets/listado.8bea30769f157589a1b0.bundle.js" type="text/javascript"></script>
+<!-- Adobe Manager -->
+<!-- Adobe Tag -->
+<script data-analytics-id="ppcc_pro" data-append="true" data-legacy-comscore="7715761" data-property-id="fec76f066c817ef426321ab5822ca519a1d35a9b" src="//static.vocento.com/tag-manager/latest/vtm.js"></script>
+<!-- End Adobe Tag -->
+<script>
+                (function () {
+                    TagManager.ready.then(function() {TagManager.set({sitioRegistro: 'autocasion', plataformaContenido: window.AUT_CONF.contentPlatform}).track();});
+                })();
+            </script>
+<noscript>
+<img border="0" height="1" src="https://vocento.d3.omtrdc.net/b/ss/vocautocasion,voces/1/G.4--S/1648149028?pageName=&amp;g=" width="1"/>
+</noscript>
+<!-- End Adobe Manager -->
+<div aria-hidden="true" aria-labelledby="modalEkomiLabel" class="modal fade" data-ng-controller="EkomiListAdsCtrl" id="modalEkomi" role="dialog" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<p class="hache2">Valora tu experiencia</p>
+</div>
+<div class="modal-body" id="modal-body-id">
+<img src="https://assets0.autocasion.com/bundles/autocasionadmin/theme/global/img/loading.gif"/>
+</div>
+</div>
+</div>
+</div>
+<div class="aviso-navegador hidden">
+<div class="container">
+<p>Para que puedas disfrutar de todas las funcionalidades de nuestra nueva web, <a href="/actualizar-navegador">te recomendamos que actualices tu navegador</a></p>
+</div>
+</div>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":
+"autocasion.com","url":"https://www.autocasion.com/","logo":"https://assets0.autocasion.com/ao-assets/img/logo.png","sameAs":["https://www.facebook.com/autocasion","https://twitter.com/Autocasion","https://www.youtube.com/user/autocasioncom"]}
+    </script>
+<script type="application/ld+json">[{"@context":"http://schema.org","@type":"Product","Name":"MERCEDES-BENZ Clase CLA 200 CDI   Shooting Brake Urban","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/mercedes-benz-clase-cla-ocasion/cla-200-cdi-shooting-brake-urban-161ad662ed98cf-ref6183508","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/1221/06/6183508/e72ab639310015a5f4b5e3dbfbd1c25d.jpg"},"Offers":{"@type":"Offer","Price":21500,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"BMW Serie 4 M4A Competition","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/bmw-serie-4-ocasion/m4a-competition-ref6632160","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/04/1997/38c5a333085fb21c59288d03d47768090e644a7f.jpg"},"Offers":{"@type":"Offer","Price":57500,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"BMW Serie 4 420dA Gran Coupé xDrive","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/bmw-serie-4-ocasion/420da-gran-coupe-xdrive-2-ref6508848","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/08/1511/9325979b558f03afc01901fcc24f6a65b78cb9c7.jpg"},"Offers":{"@type":"Offer","Price":22300,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"HONDA CR-Z 1.5i-VTEC IMA Sport","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/honda-cr-z-ocasion/cr-z-1-5i-vtec-ima-sport-ref6373812","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/10/1210/2783716d4e17871f68f34796b413e864d34c0a4e.jpeg"},"Offers":{"@type":"Offer","Price":9900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"MERCEDES-BENZ Clase CLA 200d","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/mercedes-benz-clase-cla-ocasion/cla-200d-2-ref6597760","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/10/1370/499dc23f8f1c4607562849086c97e07c399df2b1.jpg"},"Offers":{"@type":"Offer","Price":39800,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"VOLKSWAGEN Taigo 1.0 TSI Life 81kW","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-81kw-ref6544154","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/05/1858/64fad36c3762893ff7a06e167c1e51d7308e1c5b.png"},"Offers":{"@type":"Offer","Price":19802,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"FORD C-Max 1.6 Ti-VCT Trend 115","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/ford-c-max-ocasion/c-max-1-6-ti-vct-trend-115-ref6523482","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/07/1719/e7e39c74f98aa8074378bfc2e9ce7a1c1a8fc0bc.jpg"},"Offers":{"@type":"Offer","Price":5900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"VOLKSWAGEN Tiguan 2.0TDI R-Line DSG 110kW","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-km0/km-0/volkswagen-tiguan-km0/tiguan-2-0tdi-r-line-dsg-110kw-ref6536614","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/02/2206/5f458da02426c38e0114f365f19e048921159855.png"},"Offers":{"@type":"Offer","Price":38021,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"SSANGYONG Rexton 2.9 TD GLX","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/ssangyong-rexton-ocasion/rx-290-1620391d9094f0-ref6430642","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/0222/11/6430642/e423e2141eeaf9f57201df7ee3addbb7.jpg"},"Offers":{"@type":"Offer","Price":5900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"MERCEDES-BENZ Clase GLC 250d 4Matic Aut.","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/mercedes-benz-clase-glc-ocasion/glc-250d-4matic-ref6584498","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/12/1162/e0eff757181293306bc026e22b6a2de96772f38d.jpg"},"Offers":{"@type":"Offer","Price":37900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"PEUGEOT 2008 1.5 BlueHDI S&S Style 100","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/peugeot-2008-ocasion/2008-1-5-bluehdi-s-s-style-100-ref6585993","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/09/1463/25d80fe37c16df5fe6f94d1b1fd752e701e88875.jpg"},"Offers":{"@type":"Offer","Price":15400,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"SEAT Alhambra 2.0TDI CR S&S Style Adv. DSG 150","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/seat-alhambra-ocasion/alhambra-2-0tdi-cr-s-s-style-adv-dsg-150-ref6584517","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/07/1672/284bd7bf4d16adca347db2112cda13d7d6ae7399.jpg"},"Offers":{"@type":"Offer","Price":30900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"VOLKSWAGEN Taigo 1.0 TSI Life DSG 81kW","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-km0/km-0/volkswagen-taigo-km0/taigo-1-0-tsi-life-dsg-81kw-ref6544949","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/08/1533/115c6f3ee23262380f2ee1d0256b838a651962c2.png"},"Offers":{"@type":"Offer","Price":20880,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"HYUNDAI i30 FB 1.0 TGDI N-Line 120","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/hyundai-i30-ocasion/i30-fb-1-0-tgdi-n-line-120-ref6562481","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/04/1928/1b48a02f4cbd206a7048e2bc4fa471899be91c73.jpg"},"Offers":{"@type":"Offer","Price":15900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"PORSCHE Macan GTS Aut.","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/porsche-macan-ocasion/macan-gts-ref6470485","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/09/1400/ea724fa172ba7a165912cdc49f5e8989793c491a.jpg"},"Offers":{"@type":"Offer","Price":59900,"PriceCurrency":"EUR"}},{"@context":"http://schema.org","@type":"Product","Name":"VOLKSWAGEN Golf 1.6TDI Sport DSG7 85kW","MainEntityOfPage":null,"Url":"https://www.autocasion.com/coches-segunda-mano/volkswagen-golf-ocasion/golf-1-6tdi-sport-dsg7-115-1-ref6008965","Image":{"@type":"ImageObject","Url":"https://images0.autocasion.com/unsafe/origxorig/ad/1121/04/6008965/eac157127727ad5e6cd4edeadfe04fb4.jpg"},"Offers":{"@type":"Offer","Price":18300,"PriceCurrency":"EUR"}}]</script>
+<input id="indigitall-key" type="hidden" value="fe4006ae-7ca1-49df-9e3a-22088d7543db"/>
+</body>
+</html>
