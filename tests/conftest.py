@@ -1,10 +1,11 @@
-"""
-    Dummy conftest.py for vlcars.
+import pytest
+import os
 
-    If you don't know what this is for, just leave it empty.
-    Read more about conftest.py under:
-    - https://docs.pytest.org/en/stable/fixture.html
-    - https://docs.pytest.org/en/stable/writing_plugins.html
-"""
 
-# import pytest
+def pytest_sessionfinish(session, exitstatus):
+    """
+    Called after whole test run finished, right before
+    returning the exit status to the system.
+    """
+    print("\nremoving local SQL database...\n")
+    os.remove("tests/files/cars.db")
