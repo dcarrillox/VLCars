@@ -74,7 +74,6 @@ def main():
                      ]
     )
     args = parse_args(SITES)
-    print(args)
 
     # init local_db
     appname = "vlcars"
@@ -93,10 +92,10 @@ def main():
 
     # --heroku
     # parse tabular database to DataFrame and run app. Used by branch "heroku" to run app on Heroku.
-    #args.heroku = True
+    args.heroku = True
     if args.heroku:
         tab_database_file = glob.glob("src/vlcars/data/*.tsv")[0]
-        tab_database_df = pd.read_csv(tsv_file, sep="\t", header=0)
+        tab_database_df = pd.read_csv(tab_database_file, sep="\t", header=0)
         run_server_heroku(tab_database_df)
 
 
