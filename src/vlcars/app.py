@@ -46,4 +46,4 @@ def run_server_heroku(df):
         )
     ])
 
-    app.run_server(debug=False)
+    app.run_server(debug=True)
