@@ -1,1 +1,1 @@
-web: gunicorn srv/vlcars/vlcars_main:server
+web: gunicorn srv/vlcars/app_heroku:server
