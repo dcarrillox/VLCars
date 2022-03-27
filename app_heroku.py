@@ -12,12 +12,12 @@ server = app.server
 
 # -----------------
 # parse tsv database
-tsv_database_file = glob.glob("src/vlcars/data/*.tsv")[0]
+tsv_database_file = glob.glob("2022-*.tsv")[0]
 tsv_database_df = pd.read_csv(tsv_database_file, sep="\t", header=0)
 # -----------------
 
 
-fig = px.scatter(df, x="km", y="price", color="brand") # , barmode="group"
+fig = px.scatter(tsv_database_df, x="km", y="price", color="brand") # , barmode="group"
 
 app.layout = html.Div(children=[
     html.H1(children='VLCars'),
